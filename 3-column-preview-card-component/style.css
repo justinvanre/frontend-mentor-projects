@@ -39,7 +39,7 @@ body {
 
     padding: 3em 2.96875em 3em 3.03125em; /* 48 / 16   |    47.5 / 16   |   48.5 / 16 */
     background-color: var(--background-color);
-    color: var(--neutral-color-01);
+    color: white;
 }
 
 .card__media {
@@ -60,6 +60,7 @@ body {
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 700;
     font-size: 2.5rem; /* 40 / 16 */
+    color: var(--neutral-color-02);
 
     margin-block: 0.875em 0.625em; /* 35 / 40     |    25 / 40 */
 }
