@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+:root {
+    --primary-color-01: hsl(31, 77%, 52%);
+    --primary-color-02: hsl(184, 100%, 22%);
+    --primary-color-03: hsl(179, 100%, 13%);
+
+    --neutral-color-01: hsla(0, 0%, 100%, 0.75);
+    --neutral-color-02: hsl(0, 0%, 95%);
+
+    box-sizing: inherit;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+}
