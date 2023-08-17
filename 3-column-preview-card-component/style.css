@@ -92,3 +92,17 @@ body {
     background-color: transparent;
     color: white;
 }
+
+/* ------------ modifiers ------------- */
+
+.card--orange {
+    --background-color: var(--primary-color-01);
+}
+
+.card--dark-cyan {
+    --background-color: var(--primary-color-02);
+}
+
+.card--very-dark-cyan {
+    --background-color: var(--primary-color-03);
+}
