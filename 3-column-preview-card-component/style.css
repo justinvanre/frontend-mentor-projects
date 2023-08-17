@@ -43,7 +43,22 @@ body {
     overflow: hidden;
 }
 
+@media screen and (min-width: 64em) { /* 1024 / 16 */
+    main {
+        display: flex;
+        width: 100vw;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .cta-section {
+        display: grid;
+        margin: 0;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 57.5em; /* 920 / 16 */
+    }
+}
 
 /* 
 
@@ -86,6 +101,12 @@ body {
     line-height: 1.666666667; /* 25 / 15 */
 
     margin-block: 0 1.666666667em; /* 25 / 15 */
+}
+
+@media screen and (min-width: 64em) {
+    .card__content {
+        margin-bottom: 5.1875em; /* 83 / 16 */
+    }
 }
 
 .card__cta-button {
