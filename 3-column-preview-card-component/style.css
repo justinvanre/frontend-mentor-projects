@@ -75,11 +75,20 @@ body {
 .card__cta-button {
     display: inline-block;
     font-size: 0.9375rem; /* 15 / 16 */
-    padding: 0.966666667em 2.105466667em; /* Relative units for padding */
+    padding: 0.8339em 1.975em; /* Relative units for padding */
 
     background-color: white;
+    border: solid white 2px;
     border-radius: 2em;
 
     text-decoration: none;
     color: var(--background-color);
+
+    transition: background-color 165ms ease-in-out, 
+                color 165ms ease-in-out;
+}
+
+.card__cta-button:hover {
+    background-color: transparent;
+    color: white;
 }
