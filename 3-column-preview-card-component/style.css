@@ -27,6 +27,24 @@ body {
     font-family: 'Lexend Deca', sans-serif;
 }
 
+
+/* 
+
+--------------- cta section styling ------------------
+
+*/
+
+
+.cta-section {
+    width: 87.2%; /* 327 / 375 */
+    max-width: 35.75em; /* 572 / 16 */
+    margin: 5.5em auto; /* 88 / 16 */
+    border-radius: 0.5em; /* 8 / 16 */
+    overflow: hidden;
+}
+
+
+
 /* 
 
 --------------- card styling ------------------
