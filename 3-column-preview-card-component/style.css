@@ -46,8 +46,6 @@ body {
     margin: 0;
     width: 4em; /* 64 / 16 */
     height: 2.5em; /* 40 / 16 */
-
-    background-image: linear-gradient(white, white);
 }
 
 .card__media img {
