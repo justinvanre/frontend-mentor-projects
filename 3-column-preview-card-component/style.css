@@ -25,6 +25,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--neutral-color-01);
 }
 
 
@@ -45,16 +46,12 @@ body {
 
 @media screen and (min-width: 64em) { /* 1024 / 16 */
     main {
-        display: flex;
-        width: 100vw;
-        min-height: 100vh;
-        align-items: center;
-        justify-content: center;
+        
     }
 
     .cta-section {
         display: grid;
-        margin: 0;
+        margin: 10.6875em auto 0; /* 171 / 16 */
         grid-template-columns: repeat(3, 1fr);
         max-width: 57.5em; /* 920 / 16 */
     }
