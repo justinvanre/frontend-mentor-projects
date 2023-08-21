@@ -45,10 +45,6 @@ body {
 }
 
 @media screen and (min-width: 64em) { /* 1024 / 16 */
-    main {
-        
-    }
-
     .cta-section {
         display: grid;
         margin: 10.6875em auto 0; /* 171 / 16 */
@@ -89,6 +85,7 @@ body {
     font-weight: 700;
     font-size: 2.5rem; /* 40 / 16 */
     color: var(--neutral-color-02);
+    text-transform: uppercase;
 
     margin-block: 0.875em 0.625em; /* 35 / 40     |    25 / 40 */
 }
