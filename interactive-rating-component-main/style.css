@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: hsl(25, 97%, 53%);
-    
+
     --neutral-color-01: hsl(0, 0%, 100%);
     --neutral-color-02: hsl(217, 12%, 63%);
     --neutral-color-03: hsl(216, 12%, 54%);
@@ -20,4 +20,18 @@ body {
     margin: 0;
     font-family: 'Overpass', sans-serif;
 }
+
+main {
+    overflow: auto;
+    width: 100vw;
+    min-height: 100vh;
+
+    background-color: var(--neutral-color-05);
+}
+
+/*
+
+------------- card component styling --------------
+
+*/
 
