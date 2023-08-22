@@ -38,7 +38,9 @@ main {
 
 .card {
     width: 87.2%; /* 327 / 375 */
+    max-width: 25.75em; /* 412 / 16 */
     margin-inline: auto;
+    border-radius: 0.9375em; /* 15 / 16 */
     background-image: radial-gradient(#181E27,#232A34);
 }
 
@@ -53,4 +55,63 @@ main {
     line-height: 1.571428571; /* 22 / 14 */
     margin-block: 0 1.5em; /* 24 / 14 */
     color: var(--neutral-color-02);
+}
+
+
+/* --------------- modifier ----------------- */
+
+.card--rating {
+    padding: 1.5em 1.375em 2em 1.5em; /*  24 / 16  |   22 / 16   |    32 / 16   |   */
+}
+
+.card--rating__status {
+    margin-bottom: 1em;
+}
+
+.card--rating__status > figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    width: 2.5em; /* 40 / 16 */
+    height: 2.5em;
+
+    background-color: var(--neutral-color-04);
+
+    border-radius: 50%;
+}
+
+.card--rating__rates {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 0 1.5em; /* 24 / 16 */
+
+    list-style: none;
+    padding: 0;
+}
+
+
+.card--rating__rates > li > button {
+    font-size: 0.875rem; /* 14 / 16 */
+    width: 3em; /* 42 / 14 */
+    height: 3em;
+
+    border-radius: 50%;
+    background-color: var(--neutral-color-04);
+    color: var(--neutral-color-03);
+    border: none;
+
+    cursor: pointer;
+}
+
+.card--rating__btn {
+    background-color: var(--primary-color);
+    width: 100%;
+    padding-block: 0.75rem; /* 12 / 16 */
+    border: none;
+    border-radius: 2.5em;
+
+    text-transform: uppercase;
+    color: var(--neutral-color-01);
 }
