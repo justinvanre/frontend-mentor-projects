@@ -6,7 +6,7 @@
     --neutral-color-01: hsl(0, 0%, 100%);
     --neutral-color-02: hsl(217, 12%, 63%);
     --neutral-color-03: hsl(216, 12%, 54%);
-    --neutral-color-04: hsl(213, 19%, 18%);
+    --neutral-color-04: hsl(213, 20%, 18%);
     --neutral-color-05: hsl(216, 12%, 8%);
 
     box-sizing: inherit;
@@ -35,3 +35,22 @@ main {
 
 */
 
+
+.card {
+    width: 87.2%; /* 327 / 375 */
+    margin-inline: auto;
+    background-image: radial-gradient(#181E27,#232A34);
+}
+
+.card__content__heading {
+    font-size: 1.5rem; /* 24 / 16 */
+    margin-block: 0 0.708333333em; /* 17 / 24 */
+    color: var(--neutral-color-01);
+}
+
+.card__content > p {
+    font-size: 0.875rem; /* 14 / 16 */
+    line-height: 1.571428571; /* 22 / 14 */
+    margin-block: 0 1.5em; /* 24 / 14 */
+    color: var(--neutral-color-02);
+}
