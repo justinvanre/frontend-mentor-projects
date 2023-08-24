@@ -91,7 +91,6 @@ main {
     padding: 0;
 }
 
-
 .card--rating__rates > li > button {
     font-size: 0.875rem; /* 14 / 16 */
     width: 3em; /* 42 / 14 */
@@ -103,6 +102,13 @@ main {
     border: none;
 
     cursor: pointer;
+    transition: background-color 165ms ease-in-out, 
+                color 165ms ease-in-out;
+}
+
+.card--rating__rates > li > button:hover {
+    background-color: var(--primary-color);
+    color: var(--neutral-color-01);
 }
 
 .card--rating__btn {
@@ -114,4 +120,13 @@ main {
 
     text-transform: uppercase;
     color: var(--neutral-color-01);
+    cursor: pointer;
+
+    transition: background-color 165ms ease-in-out, 
+                color 165ms ease-in-out;
+}
+
+.card--rating__btn:hover {
+    background-color: var(--neutral-color-01);
+    color: var(--primary-color);
 }
