@@ -91,6 +91,8 @@ main {
     padding: 0;
 }
 
+/* ---------------- btn of rates ----------------- */
+
 .card--rating__rates__btn {
     font-size: 0.875rem; /* 14 / 16 */
     width: 3em; /* 42 / 14 */
@@ -110,6 +112,13 @@ main {
     background-color: var(--primary-color);
     color: var(--neutral-color-01);
 }
+
+.card--rating__rates__btn.clicked {
+    background-color: var(--neutral-color-03);
+    color: var(--neutral-color-01);
+}
+
+/* --------- ***** ---------- */
 
 .card--rating__btn {
     background-color: var(--primary-color);
