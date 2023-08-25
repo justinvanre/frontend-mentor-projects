@@ -91,7 +91,7 @@ main {
     padding: 0;
 }
 
-.card--rating__rates > li > button {
+.card--rating__rates__btn {
     font-size: 0.875rem; /* 14 / 16 */
     width: 3em; /* 42 / 14 */
     height: 3em;
@@ -106,7 +106,7 @@ main {
                 color 165ms ease-in-out;
 }
 
-.card--rating__rates > li > button:hover {
+.card--rating__rates__btn:hover {
     background-color: var(--primary-color);
     color: var(--neutral-color-01);
 }
