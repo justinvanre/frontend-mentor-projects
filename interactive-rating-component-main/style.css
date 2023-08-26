@@ -228,6 +228,7 @@ main {
 .card--thank-you {
     padding: 2.125em 1.5em 2.3125em; /* 34 / 16   |   24 / 16  |  37 / 16 */
     text-align: center;
+    display: none;
 }
 
 .card--thank-you__media > figure {
