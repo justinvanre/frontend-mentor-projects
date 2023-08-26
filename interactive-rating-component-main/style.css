@@ -35,17 +35,26 @@ main {
 
 */
 
+.review {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
 
 .card {
     width: 87.2%; /* 327 / 375 */
     max-width: 25.75em; /* 412 / 16 */
-    margin-inline: auto;
     border-radius: 0.9375em; /* 15 / 16 */
     background-image: radial-gradient(#181E27,#232A34);
 }
 
 .card__content__heading {
     font-size: 1.5rem; /* 24 / 16 */
+    font-weight: 700;
     margin-block: 0 0.708333333em; /* 17 / 24 */
     color: var(--neutral-color-01);
 }
@@ -55,6 +64,19 @@ main {
     line-height: 1.571428571; /* 22 / 14 */
     margin-block: 0 1.5em; /* 24 / 14 */
     color: var(--neutral-color-02);
+}
+
+@media screen and (min-width: 26.875em) {
+    .card__content__heading {
+        font-size: 1.75rem; /* 28 / 16 */
+        margin-bottom: 0.535714286em; /* 15 / 28 */
+    }
+
+    .card__content > p {
+        font-size: 0.9375em; /* 15 / 16 */
+        line-height: 1.6; /* 24 / 15 */
+        margin-bottom: 1.6em;
+    }
 }
 
 
@@ -82,6 +104,33 @@ main {
     border-radius: 50%;
 }
 
+.card--rating__status > figure > img {
+    width: 34.8958333%; /* 16.75 / 48 */
+    height: auto;
+}
+
+@media screen and (min-width: 26.875em) {
+    .card--rating {
+        padding: 2em 2.4375em 2em 2em; /* 39 / 16 */
+    }
+
+    .card--rating__status {
+        margin-bottom: 1.875em; /* 30 / 16 */
+    }
+
+    .card--rating__status > figure {
+        width: 3em; /* 48 / 16 */
+        height: 3em;
+    }
+}
+
+
+/* 
+
+---------------- btn of rates ----------------- 
+
+*/
+
 .card--rating__rates {
     display: flex;
     justify-content: space-between;
@@ -90,8 +139,6 @@ main {
     list-style: none;
     padding: 0;
 }
-
-/* ---------------- btn of rates ----------------- */
 
 .card--rating__rates__btn {
     font-size: 0.875rem; /* 14 / 16 */
@@ -118,7 +165,21 @@ main {
     color: var(--neutral-color-01);
 }
 
+@media screen and (min-width: 26.875em) {
+    .card--rating__rates {
+        margin-bottom: 2em;
+    }
+
+    .card--rating__rates__btn {
+        font-size: 1rem;
+        width: 3.1875em; /* 51 / 16 */
+        height: 3.1875em;
+    }
+}
+
+
 /* --------- ***** ---------- */
+
 
 .card--rating__btn {
     background-color: var(--primary-color);
@@ -138,4 +199,13 @@ main {
 .card--rating__btn:hover {
     background-color: var(--neutral-color-01);
     color: var(--primary-color);
+}
+
+
+@media screen and (min-width: 26.875em) {
+    .card--rating__btn {
+        font-size: 0.9375rem; /* 15 / 16 */
+        font-weight: 700;
+        padding-block: 0.866666667em; /* 13 / 15 */
+    }
 }
