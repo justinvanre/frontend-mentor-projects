@@ -84,7 +84,11 @@ main {
 }
 
 
-/* --------------- modifier ----------------- */
+/* 
+
+    --------------- card rating modifier ----------------- 
+    
+*/
 
 .card--rating {
     padding: 1.5em 1.375em 2em 1.5em; /*  24 / 16  |   22 / 16   |    32 / 16   |   */
@@ -212,4 +216,39 @@ main {
         font-weight: 700;
         padding-block: 0.866666667em; /* 13 / 15 */
     }
+}
+
+
+/* 
+
+    --------------- card thank you modifier ----------------- 
+    
+*/
+
+.card--thank-you {
+    padding: 2.125em 1.5em 2.3125em; /* 34 / 16   |   24 / 16  |  37 / 16 */
+    text-align: center;
+}
+
+.card--thank-you__media > figure {
+    margin: 0 0 1.5em; /* 24 / 16 */
+} 
+
+.card--thank-you__rating {
+    width: fit-content;
+    margin: 0 auto 1.5em; /* 24 / 16 */
+    text-align: center;
+    background-color: var(--neutral-color-04);
+    border-radius: 1.5em;
+}
+
+.card--thank-you__rating > p {
+    font-size: 0.875rem; /* 14 / 16 */
+    padding: 5px 12px; 
+    color: var(--primary-color);
+}
+
+
+@media screen and (min-width: 26.875em) {
+    
 }
