@@ -250,5 +250,12 @@ main {
 
 
 @media screen and (min-width: 26.875em) {
-    
+    .card--thank-you {
+        padding: 2em 2.8125em 2.5em; /* 32 / 16   |  45 / 16  |   40 / 16 */
+    }
+
+    .card--thank-you__media > figure,
+    .card--thank-you__rating {
+        margin-bottom: 2em; /* 32 / 16 */
+    }
 }
