@@ -195,6 +195,7 @@ main {
     padding-block: 0.75rem; /* 12 / 16 */
     border: none;
     border-radius: 2.5em;
+    letter-spacing: 2px;
 
     text-transform: uppercase;
     color: var(--neutral-color-01);
