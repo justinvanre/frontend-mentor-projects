@@ -28,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/solution-screenshot.png)
+![image](./images/solution-screenshot.png)
 
 ### Links
 
-- Solution URL: [](https://github.com/justinvanre/frontend-mentor-projects/tree/main/interactive-rating-component-main)
-- Live Site URL: [](https://justinvanre.github.io/frontend-mentor-projects/interactive-rating-component-main/)
+- Solution URL: [url](https://github.com/justinvanre/frontend-mentor-projects/tree/main/interactive-rating-component-main)
+- Live Site URL: [url](https://justinvanre.github.io/frontend-mentor-projects/interactive-rating-component-main/)
 
 ## My process
 
