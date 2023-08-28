@@ -51,7 +51,7 @@ I had so fun building this project. It was challeging but straightforward, and I
 
 ### Continued development
 
-use the magnification factor based on the design of one screensize. I'll return later in my journey to this exercise to refactor the code so that I can improve readign and reviewing code. 
+use the magnification factor based on the design of one screensize. I'll return later in my journey to this exercise to refactor the code so that I can improve reading and reviewing code. 
 
 ## Author
 
