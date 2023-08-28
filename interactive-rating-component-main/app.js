@@ -3,11 +3,6 @@ const ratingCard = document.querySelector('.card--rating');
 const ratingBtns = document.querySelectorAll('.card--rating__rates__btn');
 const ratingSubmitBtn = document.querySelector('.card--rating__btn');
 
-const thankYouCard = document.querySelector('.card--thank-you');
-
-console.log('see all the buttons queried')
-console.log(ratingBtns);
-
 /*
 
     Below is the logic for the rating btns
@@ -38,6 +33,9 @@ ratingBtns.forEach((button, index) => {
 
 */
 
+const thankYouCard = document.querySelector('.card--thank-you');
+const ratingThanYouCard = document.querySelector('.card--thank-you__rating p')
+
 
 ratingSubmitBtn.addEventListener('click', () => {
     
@@ -46,5 +44,7 @@ ratingSubmitBtn.addEventListener('click', () => {
     {
         ratingCard.style.display = 'none';
         thankYouCard.style.display = 'block'; 
+
+        ratingThanYouCard.textContent = `You selected ${indexBtnClicked} out of ${ratingBtns.length}`;
     }
 })
