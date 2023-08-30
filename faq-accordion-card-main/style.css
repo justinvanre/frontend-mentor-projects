@@ -33,7 +33,7 @@ body {
 }
 
 main {
-    overflow: auto;
+    display: flex;
     width: 100vw;
     min-height: 100vh;
     background-image: linear-gradient(to bottom,
@@ -43,4 +43,44 @@ main {
 h2 {
     font-size: 2rem; /* 32 / 16 */
     color: var(--primary-text-color-01);
+}
+
+
+/*
+
+------------- faq card styling --------------
+
+*/
+.faq {
+    width: 100vw;
+    height: 100vh;
+}
+
+.faq-card {
+    position: relative;
+    width: 87.2%; /* 327 / 375 */
+    padding: 11em 2em 4em; /* 24 / 12   |   48 / 12 */
+    margin: 12.333333333em auto 0; /* 148 / 12 */
+
+    background-color: white;
+    background-image: url(./images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.faq-card__media {
+    width: 19.75em; /* 237 / 12 */
+    min-height: 15em; /* 180 / 12 */
+
+    transform: translate(-50%);
+
+    position: absolute;
+    top: -9em; /* 108 / 12 */
+    left: 50%;
+    
+    background-image: url(./images/illustration-woman-online-mobile.svg);
+}
+
+.faq-card__list__anwser {
+    display: none;
 }
