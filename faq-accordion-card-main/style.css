@@ -2,6 +2,24 @@
 
 
 :root {
+    /*
+        primary color
+    */
+
+    /* text */
+
+    --primary-text-color-01: #1d1e35; 
+    --primary-text-color-02: #f47c57;
+
+    /* neutral color */
+
+    --neutral-text-color-01: #4a4b5e; 
+    --neutral-text-color-02: #787887; 
+
+    /* divider color */
+
+    --divider-color: #e7e7e9; 
+
     box-sizing: inherit;
 }
 
@@ -14,6 +32,15 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+main {
+    overflow: auto;
+    width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom,
+                    hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+}
+
 h2 {
     font-size: 2rem; /* 32 / 16 */
+    color: var(--primary-text-color-01);
 }
