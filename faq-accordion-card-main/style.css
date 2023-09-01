@@ -81,6 +81,10 @@ main {
     background: url(./images/illustration-woman-online-mobile.svg) no-repeat;
 }
 
+.faq-card__media__box {
+    display: none;
+}
+
 .faq-card__content__title {
     font-size: 2rem; /* 32 / 16 */
     margin-block: 0 0.9375em; /* 30 / 32 */
@@ -148,6 +152,21 @@ main {
                     url(./images/bg-pattern-desktop.svg) no-repeat;
         background-position: right center, right bottom 38%;
     }
+
+    .faq-card__media__box {
+        display: block;
+        width: 90px;
+        height: 200px;
+
+        position: absolute;
+        transform: translate(-50%);
+        left: 2px;
+        top: 39%;
+
+        background: url(./images/illustration-box-desktop.svg) no-repeat;
+        background-position: top;
+    }
+
 
     .faq-card__content {
         width: 78.6516854%; /* 350 / 445 */
