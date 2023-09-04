@@ -175,5 +175,14 @@ main {
 
     .faq-card__content__title {
         text-align: left;
+        margin-bottom: 1.3125em; /* 42 / 32 */
+    }
+
+    .faq-card__list__question {
+        font-size: 0.875rem; /* 14 / 16 */
+    }
+
+    .faq-card__list > li {
+        padding-bottom: 1.333333333em; /* 16 / 12 */
     }
 }
