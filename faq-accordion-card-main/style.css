@@ -193,6 +193,6 @@ main {
     }
 
     .faq-card__list > li {
-        padding-bottom: 1.333333333em; /* 16 / 12 */
+        padding-bottom: 1.5em; /* 18 / 12 */
     }
 }
