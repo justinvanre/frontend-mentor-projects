@@ -1,7 +1,5 @@
 const questions = document.querySelectorAll('.faq-card__list__question'); 
 
-console.log(questions);
-
 questions.forEach(question => {
 
     question.addEventListener('click', () => {
