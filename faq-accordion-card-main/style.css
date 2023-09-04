@@ -116,6 +116,12 @@ main {
     margin-block: 0;
 
     cursor: pointer;
+
+    transition: color 165ms ease-in-out;
+}
+
+.faq-card__list__question:hover {
+    color: var(--primary-text-color-02);
 }
 
 .faq-card__list__question__toggle-icon {
