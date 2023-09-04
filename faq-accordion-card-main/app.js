@@ -11,12 +11,15 @@ questions.forEach(question => {
 
         // style question   
         question.style.fontWeight = '700';
+        question.firstElementChild.style.transform = 'rotate(180deg)';
 
         // close questions that are open
         questions.forEach(q => {
             if (q !== question) {
+                // undo styling from toggle state
                 q.nextElementSibling.style.display = 'none';
                 q.style.fontWeight = '400';
+                q.firstElementChild.style.transform = 'unset'
             }
         });
 
