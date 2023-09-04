@@ -165,8 +165,8 @@ main {
 
     .faq-card__media__box {
         display: block;
-        width: 90px;
-        height: 200px;
+        width: 7.5em; /* 90 / 12 */
+        height: 16.666666667em; /* 200 / 12 */
 
         position: absolute;
         transform: translate(-50%);
