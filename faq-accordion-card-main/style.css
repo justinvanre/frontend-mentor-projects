@@ -66,6 +66,8 @@ main {
     background-image: url(./images/bg-pattern-mobile.svg);
     background-repeat: no-repeat;
     background-position: top center;
+
+    box-shadow: 0px 4.166666667em 4.166666667em -1.666666667em rgba(53, 18, 122, 0.50); /* 50 / 12 | 20 / 12 */
 }
 
 .faq-card__media {
