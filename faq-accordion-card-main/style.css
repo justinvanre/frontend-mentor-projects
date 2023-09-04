@@ -124,6 +124,10 @@ main {
     color: var(--primary-text-color-02);
 }
 
+.faq-card__list__question:active {
+    color: var(--primary-text-color-01);
+}
+
 .faq-card__list__question__toggle-icon {
     float: right;
     margin-top: -3px;
