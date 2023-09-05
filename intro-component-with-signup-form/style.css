@@ -21,3 +21,21 @@ body {
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
 }
+
+main {
+    overflow: auto;
+}
+
+/* 
+
+------------ cta component --------------
+
+*/
+
+.cta {
+    width: 100vw;
+    height: 100vh;
+
+    background: url(./images/bg-intro-mobile.png) no-repeat, 
+                var(--primary-color-01);
+}
