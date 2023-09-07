@@ -144,7 +144,7 @@ main {
     background-color: red;
 }
 
-.cta__sign-up__form > input:not(#first-name) {
+.cta__sign-up__form > input:not(.cta__sign-up__form__first-input) {
     margin-top: 1.142857143em; /* 16 / 14 */
 }
 
@@ -242,7 +242,7 @@ main {
         padding-inline: 2em; /* 32 / 16 */
     }
 
-    .cta__sign-up__form > input:not(#first-name) {
+    .cta__sign-up__form > input:not(.cta__sign-up__form__first-input) {
         margin-top: 1.428571429em; /* 20 / 14 */
     }
 
