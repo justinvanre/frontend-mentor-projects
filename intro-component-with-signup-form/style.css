@@ -26,6 +26,17 @@ main {
     overflow: auto;
     background: url(./images/bg-intro-mobile.png) no-repeat, 
                 var(--primary-color-01);
+    background-position: center;
+}
+
+@media screen and (min-width: 35.9375em) { /* 575 / 16 */   
+    main {
+        background: url(./images/bg-intro-desktop.png) no-repeat, 
+                var(--primary-color-01);
+        background-position: center;
+        background-size: cover;
+        min-height: 100vh;
+    }
 }
 
 /* 
@@ -37,8 +48,9 @@ main {
 .cta {
     width: 100vw;
     min-height: 100vh;
-
     padding: 5.5em 1.5em 4.25em; /* 88 / 16   |   24 / 16    |    68 / 16 */
+    max-width: 35.9375em; /* 575 / 16 */
+    margin-inline: auto;
 }
 
 .cta__content {
@@ -122,7 +134,7 @@ main {
 }
 
 .cta__sign-up__form > * + input {
-    margin-bottom: 1rem; 
+    margin-bottom: 1.142857143em; /* 16 / 14 */
 }
 
 .cta__sign-up__form > input:focus {
@@ -161,4 +173,53 @@ main {
 .cta__sign-up__terms > p > span {
     font-weight: 700;
     color: var(--primary-color-01);
+}
+
+@media screen and (min-width: 965px) {
+    .cta {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        column-gap: 3.125%; /* 45 / 1440 */
+
+        width: 77.0833333%; /* 1110 / 1440 */
+        max-width: 1110px;
+    } 
+
+    .cta__column-1, .cta__column-2 {
+        display: flex;
+        align-items: center;
+    }
+
+    .cta__content {
+        text-align: left;
+    }
+
+    .cta__sign-up {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .cta__content__title {
+        font-size: 3.125rem; /* 50 / 16 */
+        letter-spacing: -0.521px;
+        line-height: 110%;
+    }
+
+    .cta__content__text {
+        margin-top: 37px; /* 11 / 16 */
+    }
+
+    .cta__sign-up__form {
+        padding: 2.5em; /* 40 / 16 */ 
+    }
+
+    .cta__sign-up__form > input {
+        padding-inline: 2em; /* 32 / 16 */
+    }
+
+    .cta__sign-up__form > * + input {
+        margin-bottom: 1.428571429em; /* 20 / 14 */
+    }
 }
