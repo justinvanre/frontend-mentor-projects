@@ -144,8 +144,8 @@ main {
     background-color: red;
 }
 
-.cta__sign-up__form > * + input {
-    margin-bottom: 1.142857143em; /* 16 / 14 */
+.cta__sign-up__form > input:not(#first-name) {
+    margin-top: 1.142857143em; /* 16 / 14 */
 }
 
 .cta__sign-up__form > input:focus {
@@ -164,6 +164,7 @@ main {
     border-radius: 0.333333333em; /* 5 / 15 */
     border: none;
     box-shadow: 0 -0.266666667em 0 0 rgba(0, 0, 0, 0.09) inset; /* 4 / 15 */
+    margin-top: 1.066666667em; /* 16 / 15 */
     
     color: white;
     background-color: var(--primary-color-02);
@@ -241,7 +242,11 @@ main {
         padding-inline: 2em; /* 32 / 16 */
     }
 
-    .cta__sign-up__form > * + input {
-        margin-bottom: 1.428571429em; /* 20 / 14 */
+    .cta__sign-up__form > input:not(#first-name) {
+        margin-top: 1.428571429em; /* 20 / 14 */
+    }
+
+    .cta__sign-up__form > button {
+        margin-top: 1.333333333em; /* 20 / 15 */
     }
 }
