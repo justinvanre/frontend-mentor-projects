@@ -121,6 +121,7 @@ main {
 }
 
 .cta__sign-up__form > input {
+    position: relative;
     width: 100%;
     font-size: 0.875rem; /* 14 / 16 */
     padding: 1.071428571em 1.386428571em; /* 15 / 14   |   19.41 / 14 */
@@ -131,6 +132,16 @@ main {
     border-radius: 0.357142857em; /* 5 / 14 */
     border: 1px solid #DEDEDE;
     outline: none;
+
+    transition: border-color 265ms ease-in;
+}
+
+.cta__sign-up__form > input::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: red;
 }
 
 .cta__sign-up__form > * + input {
@@ -156,6 +167,17 @@ main {
     
     color: white;
     background-color: var(--primary-color-02);
+
+    transition: background-color 265ms ease-in-out, box-shadow 165ms ease-in;
+    cursor: pointer;
+}
+
+.cta__sign-up__form > button:hover {
+    background-color: hsla(154, 65%, 68%, 1);
+}
+
+.cta__sign-up__form > button:active {
+    box-shadow: 0 -0.1em 0 0 rgba(0, 0, 0, 0.09) inset;
 }
 
 .cta__sign-up__terms > p {
