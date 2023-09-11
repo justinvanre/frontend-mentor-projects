@@ -27,7 +27,7 @@ const validateForm = () => {
         }
     });
 
-    // return value to submit or prevent submitting from.
+    // return value to submit or prevent submitting form.
     return isValid;
 }
 
