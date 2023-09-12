@@ -8,6 +8,9 @@ const validateForm = () => {
     const emailCriteria = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
     requiredElements.forEach(element => {
+        // text below input element
+        let nextEl = element.nextElementSibling; 
+
         if(element.value.trim() === "" || (element.type === 'email' && !emailCriteria.test(element.value))) { // Logic checking if the fields are empty
 
             // prevent form from submitting 
@@ -16,7 +19,6 @@ const validateForm = () => {
             // Enable styling error state
             element.classList.add('cta__sign-up__form__input--error');
                         
-            let nextEl = element.nextElementSibling; 
             nextEl.style.display = 'block'; 
             nextEl.innerHTML = element.type === 'email' ? `Looks like this is not an email.`:
                                                           `${element.name} cannot be empty.`;
@@ -24,6 +26,7 @@ const validateForm = () => {
         } else {
             // disable styling error state
             element.classList.remove('cta__sign-up__form__input--error');
+            nextEl.style.display = 'none'; 
         }
     });
 
