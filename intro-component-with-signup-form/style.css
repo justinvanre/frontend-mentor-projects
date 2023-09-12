@@ -125,6 +125,7 @@ main {
     width: 100%;
     font-size: 0.875rem; /* 14 / 16 */
     padding: 1.071428571em 1.386428571em; /* 15 / 14   |   19.41 / 14 */
+    line-height: 185.714%;
 
     color: var(--neutral-color-01);
     font-weight: 600;
@@ -134,14 +135,6 @@ main {
     outline: none;
 
     transition: border-color 265ms ease-in;
-}
-
-.cta__sign-up__form > input::after {
-    content: "";
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    background-color: red;
 }
 
 .cta__sign-up__form > input:not(.cta__sign-up__form__first-input) {
