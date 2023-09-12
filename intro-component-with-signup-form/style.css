@@ -226,7 +226,7 @@ main {
     }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 68.75em) { /* 1100 / 16 */
     .cta__content__title {
         font-size: 3.125rem; /* 50 / 16 */
         letter-spacing: -0.521px;
@@ -234,7 +234,7 @@ main {
     }
 
     .cta__content__text {
-        margin-top: 37px; /* 11 / 16 */
+        margin-top: 2.1875em; /* 11 / 16 */
     }
 
     .cta__sign-up__form {
