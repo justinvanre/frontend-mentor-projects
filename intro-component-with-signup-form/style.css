@@ -81,7 +81,7 @@ main {
 
 .cta__sign-up__offer {
     background-color: var(--accent-color);
-    padding: 1.125em 4.1875em; /* 18 / 16   |   67 / 16 */
+    padding: 1.0625em 4.1875em; /* 17 / 16   |   67 / 16 */
     border-radius: 0.625em; /* 10 / 16 */
     box-shadow: 0 0.5em 0 0 rgba(0, 0, 0, 0.15); /* 8 / 16 */
 
@@ -201,13 +201,23 @@ main {
 @media screen and (min-width: 965px) {
     .cta {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        column-gap: 3.125%; /* 45 / 1440 */
-
         width: 77.0833333%; /* 1110 / 1440 */
-        max-width: 1110px;
+        max-width: 69.375em; /* 1110 / 16 */
+
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        column-gap: 2.7027027%; /* 30 / 1110 */
+
+        padding: 0;
     } 
+
+    .cta__column-1 {
+        grid-column: 1 / 7;
+    }
+
+    .cta__column-2 {
+        grid-column: 7 / 13;
+    }
 
     .cta__column-1, .cta__column-2 {
         display: flex;
