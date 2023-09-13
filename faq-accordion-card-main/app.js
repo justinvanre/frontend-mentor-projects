@@ -5,7 +5,7 @@ questions.forEach(question => {
     question.addEventListener('click', () => {
         // toggle answer of question
         const answer = question.nextElementSibling;
-        answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
 
         // style question   
         question.style.fontWeight = '700';

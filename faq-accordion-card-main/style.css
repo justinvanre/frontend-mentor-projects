@@ -175,7 +175,7 @@ main {
         position: absolute;
         transform: translate(-50%);
         left: 2px;
-        top: 39%;
+        top: 40.4950884%; /* 206.12 / 509 */
 
         background: url(./images/illustration-box-desktop.svg) no-repeat;
         background-position: top;
