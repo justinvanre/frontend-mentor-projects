@@ -3,14 +3,16 @@ const questions = document.querySelectorAll('.faq-card__list__question');
 questions.forEach(question => {
 
     question.addEventListener('click', () => {
+        
         // toggle answer of question
         const answer = question.nextElementSibling;
-        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        answer.style.display = 'block';
 
         // style question   
         question.style.fontWeight = '700';
         question.firstElementChild.style.transform = 'rotate(180deg)';
 
+        
         // close questions that are open
         questions.forEach(q => {
             if (q !== question) {
