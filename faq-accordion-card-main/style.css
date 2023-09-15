@@ -58,7 +58,7 @@ main {
     max-width: 55em; /* 920 / 12 */
 
     padding: 11em 2em 4em; /* 24 / 12   |   48 / 12 */
-    margin: 12.333333333em auto 0 19.5138889%; /* 148 / 12  |   281 / 1440 */
+    margin-top: 12.333333333em; /* 148 / 12 */
 
     border-radius: 1.916666667em; /* 23 / 12 */
 
@@ -143,6 +143,12 @@ main {
 
 
 @media screen and (min-width: 59.3125em) {
+    .faq {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
     .faq-card {
         display: grid;
         grid-template-columns: 42.173913% 48.3695652%; /* 388 / 920 | 445 / 920 */
@@ -150,6 +156,7 @@ main {
 
         max-width: 76.666666667em; /* 920 / 12 */
         margin-top: 10.75em; /* 129 / 12 */
+        margin-left: 21px;
 
         padding: 0;
         
