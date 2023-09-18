@@ -3,14 +3,14 @@ const questions = document.querySelectorAll('.faq-card__list__question');
 const showAnswer = (question, answer) => {
     answer.style.display = 'block';
     // rotation arrow
-    question.nextElementSibling.style.transform = 'rotate(180deg)';
+    question.firstElementChild.style.transform = 'rotate(180deg)';
     question.style.fontWeight = '700'; 
 }
 
 
 const hideAnswer = (question, answer) => {
     answer.style.display = 'none';
-    question.nextElementSibling.style.transform = 'unset';
+    question.firstElementChild.style.transform = 'unset';
     question.style.fontWeight = '400'; 
 }
 
