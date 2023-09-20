@@ -1,4 +1,14 @@
 
+/* 
+
+    Importing font Red hat:
+
+    font-family: 'Red Hat Display', sans-serif;
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+
 :root {
     --primary-color: #4D96A9;
     --primary-text-color: #28283D;
@@ -11,4 +21,54 @@
     
     --background-color: #FAFAFA;
 
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    line-height: 162.5%;
+    font-weight: 500;
+
+    text-align: center;
+
+    color: var(--secondary-text-color, #87879D);
+}
+
+h1 {
+    font-size: 2.5rem; /* 40 / 16 */
+    font-weight: 900;
+    line-height: 110%;
+
+    color: var(--primary-text-color, #28283D);
+}
+
+h2 {
+    font-size: 2rem; /* 32 / 16 */
+    font-weight: 900;
+    line-height: 112.5%;
+
+    color: var(--primary-text-color, #28283D);
+}
+
+@media screen and (min-width: 48em) { /* 768 / 16 */
+    h1 {
+        font-size: 3rem; /* 48 / 16 */
+        line-height: 100%;
+    }
+
+    h2 {
+        font-size: 2.5rem; /* 40 / 16 */
+        line-height: 110%;
+    }
+}
+
+@media screen and (min-width: 90em) { /* 1440 / 16 */
+
+    body {
+        font-size: 1.125rem; /* 18 / 16 */
+        line-height: 144.444%;
+    }
+    
+    h1 {
+        font-size: 4rem; /* 64 / 16 */
+    }
 }
