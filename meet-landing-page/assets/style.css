@@ -15,12 +15,19 @@
 
     --secondary-color: #855FB1;
     --secondary-text-color: #87879D;
+
+    --primary-lighter: #8FE3F9;
+    --secondary-lighter: #D9B8FF;
     
-    --primary-hover-color: #8FE3F9;
-    --secondary-hover-color: #D9B8FF;
+    --primary-hover-color: #71C0D4;
+    --secondary-hover-color: #B18BDD;
     
     --background-color: #FAFAFA;
 
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 body {
@@ -70,5 +77,61 @@ h2 {
     
     h1 {
         font-size: 4rem; /* 64 / 16 */
+    }
+}
+
+/* 
+
+    button component
+
+*/
+
+
+.button {
+    padding: 1.2381em 2.2197em;
+    border: none;
+    border-radius: 1.8125em; /* 29 / 16 */
+    background-color: var(--primary-color, #4D96A9);
+    color: var(--background-color, #FAFAFA);
+
+    font-weight: 900;
+    cursor: pointer;
+
+    transition: background-color 165ms ease-in-out;
+}
+
+.button > span {
+    color: var(--primary-lighter, #8FE3F9);
+}
+
+.button:hover {
+    background-color: var(--primary-hover-color, #71C0D4);
+}
+
+
+
+/*
+
+    utility classes
+
+*/
+
+.section-space {
+    margin-top: 4em; /* 64 / 16 */ 
+}
+
+@media screen and (min-width: 48em) { /* 768 / 16 */
+    .section-space {
+        margin-top: 5em; /* 80 / 16 */ 
+    } 
+}
+
+@media screen and (min-width: 90em) { /* 1440 / 16 */
+    .section-space {
+        margin-top: 6.5em; /* 117 / 18 */
+    }
+
+    .section-space--smaller {
+        margin-top: 4em; /* 72 / 18 */
     }
 }
