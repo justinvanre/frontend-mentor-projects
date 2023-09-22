@@ -108,6 +108,18 @@ h2 {
     background-color: var(--primary-hover-color, #71C0D4);
 }
 
+.button--secondary {
+    background-color: var(--secondary-color, #855FB1);
+}
+
+.button--secondary > span {
+    color: var(--secondary-lighter, #D9B8FF);
+}
+
+.button--secondary:hover {
+    background-color: var(--secondary-hover-color, #B18BDD);
+}
+
 
 
 /*
