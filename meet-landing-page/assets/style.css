@@ -121,6 +121,41 @@ h2 {
 }
 
 
+/* 
+
+    section number component
+
+    this component displays the section you're at.
+
+*/
+
+.section-nr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.section-nr__line {
+    height: 84px;
+    width: 1px;
+    background-color: #87879D;
+}
+
+.section-nr__circle {
+    width: 56px;
+    height: 56px;
+    border-radius: 29px;
+    border: 1px solid rgba(135, 135, 157, 0.25);
+    background: #FAFAFA;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 /*
 
