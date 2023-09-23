@@ -155,6 +155,23 @@ h2 {
     justify-content: center;
 }
 
+/* 
+
+    overline component
+
+*/
+
+.overline {
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 162.5%;
+    letter-spacing: 0.25em; /* 4 / 16 */
+    text-transform: uppercase;
+    color: var(--primary-color, #4D96A9);
+
+    margin: 0;
+}
+
 
 
 /*
