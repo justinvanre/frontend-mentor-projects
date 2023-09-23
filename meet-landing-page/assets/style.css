@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
 
 :root {
-    --primary-color: #4D96A9;
+    --primary-color: rgb(77, 150, 169);
     --primary-text-color: #28283D;
 
     --secondary-color: #855FB1;
@@ -274,6 +274,43 @@ header {
 .service__content__text {
     margin-block: 2em 0; /* 32 / 16 */
 }
+
+
+/*
+
+    ----------- Styling call to action section -------------
+
+*/
+
+.cta-section > .section-nr {
+    margin-bottom: -1.75em; /* 28 / 16 */
+} 
+
+.cta-section__content {
+    background: linear-gradient(to right, rgba(77, 150, 169, 0.8), rgba(77, 150, 169, 0.8)), 
+                url(./mobile/image-footer.jpg), no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    color: var(--background-color);
+}
+
+.cta-section__content > div {
+    padding-block: 5.75em 4.5em; /* 92 / 16    |   72 / 16 */
+    max-width: 87.2%; /* 375 / 327 */ 
+    margin-inline: auto;
+}
+
+.cta-section__content__heading {
+    font-size: 2rem; /* 32 / 16 */
+    font-weight: 900;
+    line-height: 112.5%;
+}
+
+.cta-section__content__text {
+    margin-block: 1.5em 2em; /* 24 / 16  |   32 / 16 */
+}
+
 
 /*
 
