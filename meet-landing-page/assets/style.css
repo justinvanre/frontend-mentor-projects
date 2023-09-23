@@ -187,7 +187,6 @@ header {
     background-position: center 130px; 
 
     overflow: auto;
-
 }
 
 .hero {
@@ -225,6 +224,56 @@ header {
     gap: 1em;
 }
 
+
+/*
+
+    ----------- Styling service section -------------
+
+*/
+
+.service {
+    max-width: 87.2%; /* 375 / 327 */ 
+    margin: auto;
+}
+
+.service__media {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 1.5em; /* 24 / 16 */
+
+    margin-top: 4em; /* 64 / 16 */
+}
+
+.service__media > figure {
+    width: 9.4375em; /* 151 / 16 */
+    height: 8.9375em; /* 143 / 16 */
+
+    border-radius: 5%;
+    overflow: hidden;
+
+    padding: 0;
+    margin: 0;
+}
+
+.service__media > figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service__content {
+    margin-top: 4em; /* 64 / 16 */
+}
+
+.service__content > h2 {
+    margin-block: 0.6em 0; /* 24 / 40 */
+}
+
+.service__content__text {
+    margin-block: 2em 0; /* 32 / 16 */
+}
 
 /*
 
