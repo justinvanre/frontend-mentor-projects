@@ -176,6 +176,58 @@ h2 {
 
 /*
 
+    ----------- Styling header section -------------
+
+*/
+
+header {
+    background-image: url(./tablet/image-hero.png);
+    background-size: 25.875em; /* 414 / 16 */
+    background-repeat: no-repeat;
+    background-position: center 130px; 
+
+    overflow: auto;
+
+}
+
+.hero {
+    max-width: 87.2%; /* 375 / 327 */ 
+    margin-inline: auto;
+}
+
+.hero__logo {
+    font-size: 1rem;
+    width: 7.4375em; /* 119 / 16 */
+
+    padding: 0;
+    margin: 3em auto 0; /* 48 / 16 */
+}
+
+.hero__content {
+    margin-top: 15.9375em; /* 255 / 16 */
+}
+
+.hero__content > h1 {
+    margin: 0;
+}
+
+.hero__content > p {
+    margin-block: 1.5em 2em; /* 24 / 16   |    32 / 16 */ 
+}
+
+.hero__cta {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+/*
+
     utility classes
 
 */
