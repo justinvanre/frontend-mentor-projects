@@ -308,7 +308,11 @@ header {
 }
 
 .cta-section__content__text {
-    margin-block: 1.5em 2em; /* 24 / 16  |   32 / 16 */
+    margin-block: 1.5em 0; /* 24 / 16 */
+}
+
+.cta-section__content > div > .button {
+    margin-top: 2em; /* 32 / 16 */
 }
 
 
