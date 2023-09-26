@@ -296,7 +296,7 @@ header {
 @media screen and (min-width: 48em) { /* 768 / 16 */ 
     .service {
         width: 89.7135417%; /* 689 / 768 */
-        max-width: unset; /* 436 / 16 */
+        max-width: 46.1875em; /* 739 / 16 */
 
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -362,14 +362,35 @@ header {
     font-size: 2rem; /* 32 / 16 */
     font-weight: 900;
     line-height: 112.5%;
+
+    padding-inline: 1em;
 }
 
 .cta-section__content__text {
-    margin-block: 1.5em 0; /* 24 / 16 */
+    font-size: 1.125rem; /* 18 / 16 */
+    margin-block: 1.333333333em 1.777777778em; /* 24 / 18 |  32 / 18  */
 }
 
-.cta-section__content > div > .button {
-    margin-top: 2em; /* 32 / 16 */
+@media screen and (min-width: 48em) { 
+    .cta-section__content  {
+        background: linear-gradient(to right, rgba(77, 150, 169, 0.8), rgba(77, 150, 169, 0.8)), 
+                url(./tablet/image-footer.jpg), no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+
+    .cta-section__content > div {
+        max-width: 35.8125em; /* 573 / 16 */
+        padding-bottom: 4.125em; /* 66 / 16 */
+    }
+
+    .cta-section__content__heading {
+        font-size: 2.5rem; /* 40 / 16 */
+    }
+
+    .cta-section__content__text {
+        margin-block: 1.777777778em 2.222222222em; /* 32 / 18  |   40 / 18 */
+    } 
 }
 
 
