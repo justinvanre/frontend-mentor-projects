@@ -190,7 +190,8 @@ header {
 }
 
 .hero {
-    max-width: 87.2%; /* 375 / 327 */ 
+    width: 87.2%; /* 375 / 327 */ 
+    max-width: 27.25em; /* 436 / 16 */
     margin-inline: auto;
 }
 
@@ -232,7 +233,8 @@ header {
 */
 
 .service {
-    max-width: 87.2%; /* 375 / 327 */ 
+    width: 87.2%; /* 375 / 327 */ 
+    max-width: 27.25em; /* 436 / 16 */
     margin: auto;
 }
 
@@ -297,7 +299,8 @@ header {
 
 .cta-section__content > div {
     padding-block: 5.75em 4.5em; /* 92 / 16    |   72 / 16 */
-    max-width: 87.2%; /* 375 / 327 */ 
+    width: 87.2%; /* 375 / 327 */ 
+    max-width: 27.25em; /* 436 / 16 */
     margin-inline: auto;
 }
 
