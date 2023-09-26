@@ -241,6 +241,38 @@ header {
     }
 }
 
+@media screen and (min-width: 90em) {
+    header {
+        background: url(./desktop/image-hero-left.png), url(./desktop/image-hero-right.png);
+        background-repeat: no-repeat;
+        background-position: left -32px top 169px, right -32px top 169px;
+        background-size: 21.888888889em; /* 394 / 18 */
+
+        margin-inline: auto;
+    }
+
+    .hero {
+        max-width: 30em; /* 540 / 18 */
+    }
+
+    .hero__logo {
+        margin-top: 4.444444444em; /* 80 / 18 */
+    }
+
+    .hero__content {
+        margin-top: 6em; /* 108 / 18 */
+        grid-column: 6 / 8;
+    }
+
+    .hero__content > h1 {
+        padding-inline: 1em;
+    }
+
+    .hero__content > p {
+        margin-block: 1.888888889em 1.777777778em; /* 34 / 18   |    32 / 18 */ 
+    }
+}
+
 
 /*
 
