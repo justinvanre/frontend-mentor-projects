@@ -241,7 +241,7 @@ header {
     }
 }
 
-@media screen and (min-width: 90em) {
+@media screen and (min-width: 90em) { /* 1440 / 16 */
     header {
         background: url(./desktop/image-hero-left.png), url(./desktop/image-hero-right.png);
         background-repeat: no-repeat;
@@ -362,6 +362,37 @@ header {
     }
 }
 
+@media screen and (min-width: 90em) { /* 1440 / 16 */
+    .service {
+        width: unset;
+        max-width: 61.666666667em; /* 1110 / 18 */
+
+        column-gap: 65px;
+    }
+
+    .service__media {
+        margin-top: 3.555555556em; /* 64 / 18 */
+    }
+
+    .service__media > figure {
+        width: 14.166666667em; /* 255 / 18 */
+        height: 13.444444444em; /* 242 / 18 */
+    }
+
+    .service__content {
+        grid-column: 4 / 10;
+        margin-top: 4.444444444em; /* 80 / 18 */
+    }
+
+    .service__content > h2 {
+        padding-inline: 1.1875em; /* 47.5 / 40 */
+    }
+
+    .service__content__text {
+        margin-top: 1.777777778em; /* 32 / 18 */
+    }
+}
+
 
 /*
 
@@ -444,7 +475,7 @@ header {
 
 @media screen and (min-width: 90em) { /* 1440 / 16 */
     .section-space {
-        margin-top: 6.5em; /* 117 / 18 */
+        margin-top: 6.111111111em; /* 110 / 18 */
     }
 
     .section-space--smaller {
