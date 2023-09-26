@@ -293,6 +293,43 @@ header {
     margin-block: 2em 0; /* 32 / 16 */
 }
 
+@media screen and (min-width: 48em) { /* 768 / 16 */ 
+    .service {
+        width: 89.7135417%; /* 689 / 768 */
+        max-width: unset; /* 436 / 16 */
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 48px;
+    }
+
+    .service > .section-nr {
+        grid-column: 1 / 13;
+    }
+
+    .service__media {
+        grid-column: 1 / 13;
+        gap: unset; /* 11 / 16 */
+        justify-content: space-between;
+        margin-top: 4.1875em; /* 67 / 16 */
+    }
+
+    .service__media > figure {
+        width: 10.25em; /* 164 / 16 */
+        height: 9.75em; /* 156 / 16 */
+    }
+
+    .service__content {
+        grid-column: 2 / 12;
+        margin-top: 3em; /* 48 / 16 */
+    }
+
+    .service__content > h2 {
+        padding-inline: 1.6em; /* 64 / 40 */
+        margin-top: 0.4em; /* 40 / 16 */
+    }
+}
+
 
 /*
 
