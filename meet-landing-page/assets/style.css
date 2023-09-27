@@ -434,7 +434,7 @@ header {
     margin-block: 1.333333333em 1.777777778em; /* 24 / 18 |  32 / 18  */
 }
 
-@media screen and (min-width: 48em) { 
+@media screen and (min-width: 48em) { /* 768 / 16 */
     .cta-section__content  {
         background: linear-gradient(to right, rgba(77, 150, 169, 0.8), rgba(77, 150, 169, 0.8)), 
                 url(./tablet/image-footer.jpg), no-repeat;
@@ -454,6 +454,32 @@ header {
     .cta-section__content__text {
         margin-block: 1.777777778em 2.222222222em; /* 32 / 18  |   40 / 18 */
     } 
+}
+
+@media screen and (min-width: 90em) { /* 1440 / 16 */
+    .cta-section__content > div {
+        max-width: 61.666666667em; /* 1110 / 18 */
+        padding-block: 6.444444444em 5.777777778em; /* 116 / 18    |   104 / 18 */
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        text-align: left;
+    }
+
+    .cta-section__content__heading {
+        margin: 0;
+        padding: 0;
+
+        width: 31.5315315%; /* 350 / 1110 */
+        margin-right: auto;
+    }
+
+    .cta-section__content__text {
+        margin: 0 5.111111111em 0 0; /* 92 / 18 */
+        width: 31.5315315%; /* 350 / 1110 */
+    }
 }
 
 
