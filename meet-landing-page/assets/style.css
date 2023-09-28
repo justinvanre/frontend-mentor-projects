@@ -255,7 +255,7 @@ header {
     }
 
     .hero__logo {
-        margin-top: 4.444444444em; /* 80 / 18 */
+        margin-top: 5em; /* 80 / 16 */
     }
 
     .hero__content {
@@ -275,7 +275,7 @@ header {
 
 @media screen and (min-width: 93.75em) { /* 1500 / 18 */
     header {
-        background-position: left 9.333333333em, right 2.444444444em;
+        background-position: left 9.333333333em, right 12.444444444em;
     }
 }
 
