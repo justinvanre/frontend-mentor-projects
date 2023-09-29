@@ -468,6 +468,11 @@ header {
 }
 
 @media screen and (min-width: 90em) { /* 1440 / 16 */
+    .cta-section__content {
+        background: linear-gradient(to right, rgba(77, 150, 169, 0.8), rgba(77, 150, 169, 0.8)), 
+                url(./desktop/image-footer.jpg), no-repeat;
+    }
+
     .cta-section__content > div {
         max-width: 61.666666667em; /* 1110 / 18 */
         padding-block: 6.444444444em 5.777777778em; /* 116 / 18    |   104 / 18 */
