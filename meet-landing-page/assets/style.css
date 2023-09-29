@@ -38,6 +38,7 @@ body {
     text-align: center;
 
     color: var(--secondary-text-color, #87879D);
+    background-color: var(--background-color, #FAFAFA);
 
     max-width: 100vw;
     overflow-x: auto;
@@ -144,14 +145,14 @@ h2 {
 .section-nr__line {
     height: 5.253em; /* 84 / 16 */
     width: 1px;
-    background-color: #87879D;
+    background-color: rgba(135, 135, 157, 0.251);
 }
 
 .section-nr__circle {
     width: 3.5em; /* 56 / 16 */
     height: 3.5em;
     border-radius: 1.8125em; /* 29 / 16 */
-    border: 1px solid rgba(135, 135, 157, 0.25);
+    border: 1px solid rgba(135, 135, 157, 0.251);
     background: #FAFAFA;
 
     display: flex;
@@ -344,7 +345,7 @@ header {
 
     .service > .section-nr {
         grid-column: 1 / 13;
-        margin-top: .5em; 
+        margin-top: -.5em; 
     }
 
     .service__media {
