@@ -25,13 +25,13 @@ body {
 }
 
 
+
 /*
 
-
----------- utlity classes -----------
-
+---------- utility classes -----------
 
 */
+
 .heading {
     color: #030303;
     margin: 0;
@@ -51,4 +51,19 @@ body {
 @media screen and (min-width: 90em) { /* 1440 / 16 */
     .heading--large { font-size: 4.375rem; } /* 70 / 16 */
     .heading--medium { font-size: 2.5rem; } /* 40 / 16 */
+}
+
+/* spacing utility class */
+
+.section-space { margin-top: 6.25em; } /* 100 / 16 */
+
+@media screen and (min-width: 48em) { /* 768 / 16 */ 
+    .section-space { margin-top: 6.666666667em; } /* 120 / 18 */
+}
+
+@media screen and (min-width: 90em) { /* 1440 / 16 */ 
+    .section-space { margin-top: 4.888888889em; } /* 88 / 18 */
+    .section-space--large {
+        margin-top: 7.555555556em; /* 136 / 18 */
+    }
 }
