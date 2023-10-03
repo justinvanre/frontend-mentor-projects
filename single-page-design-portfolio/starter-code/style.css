@@ -57,7 +57,12 @@ body {
     background-color: #F6A560;
 }
 
-
+@media screen and (min-width: 48em) { /* 768 / 16 */ 
+    .button {
+        font-size: 1rem;
+        padding: 1.17584375em 2.89709375em; /* 18,8135 / 16  |  46,3535 / 16 */
+    }
+}
 
 /*
 
