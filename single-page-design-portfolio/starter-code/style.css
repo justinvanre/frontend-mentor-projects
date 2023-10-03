@@ -49,6 +49,19 @@ body {
     background-color: #755CDE;
 }
 
+.button--primary--arrow {
+    font-size: 1rem;
+    padding: 0;
+    width: 4em; /* 64 / 16 */
+    height: 4em; /* 64 / 16 */
+    border-radius: 50%;
+}
+
+.button--primary--arrow > img {
+    width: 23.140625%; /* 14.81 / 64 */
+    height: 25%; /* 16 / 64 */
+}
+
 .button--secondary {
     background-color: #EB7565;
 }
@@ -61,6 +74,10 @@ body {
     .button {
         font-size: 1rem;
         padding: 1.17584375em 2.89709375em; /* 18,8135 / 16  |  46,3535 / 16 */
+    }
+
+    .button--primary--arrow {
+        padding: 0;
     }
 }
 
