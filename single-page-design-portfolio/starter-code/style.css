@@ -24,6 +24,39 @@ body {
     }
 }
 
+/* 
+
+------------- button component -------------
+
+*/
+
+.button {
+    border: 0;
+    font-size: 0.875rem; /* 14 / 16 */
+    padding: 0.996642857em 2.05775em; /* 13,953 / 14 | 28,8085 / 14 */
+    border-radius: 2em; /* 28 / 14 */
+    color: #FFF7F0;
+    cursor: pointer;
+
+    transition: background-color 165ms ease-in-out;
+}
+
+.button--primary {
+    background-color: #030303;
+}
+
+.button--primary:hover {
+    background-color: #755CDE;
+}
+
+.button--secondary {
+    background-color: #EB7565;
+}
+
+.button--secondary:hover {
+    background-color: #F6A560;
+}
+
 
 
 /*
