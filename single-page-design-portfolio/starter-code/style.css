@@ -11,4 +11,44 @@
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: #FFF7F0;
+    color: #7A746E;
+
+    line-height:  162.5%;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 48em) { /* 768 / 16 */
+    body {
+        font-size: 1.125rem; /* 18 / 16 */
+        line-height: 155.556%;
+    }
+}
+
+
+/*
+
+
+---------- utlity classes -----------
+
+
+*/
+.heading {
+    color: #030303;
+    margin: 0;
+    font-weight: 700;
+}
+
+.heading--large { font-size: 2.25rem; } /* 36 / 16 */
+.heading--medium { font-size: 1.625rem; } /* 26 / 16 */
+.heading--small { font-size: 1.5rem; } /* 24 / 16 */
+
+@media screen and (min-width: 48em) { /* 768 / 16 */
+    .heading--large { font-size: 2.75rem; } /* 44 / 16 */
+    .heading--medium { font-size: 2rem; } /* 32 / 16 */
+    .heading--small { font-size: 32rem; }
+}
+
+@media screen and (min-width: 90em) { /* 1440 / 16 */
+    .heading--large { font-size: 4.375rem; } /* 70 / 16 */
+    .heading--medium { font-size: 2.5rem; } /* 40 / 16 */
 }
