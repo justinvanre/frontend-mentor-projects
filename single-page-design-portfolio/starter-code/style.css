@@ -121,11 +121,68 @@ body {
 ------------ occupation component -------------
 
 */
-
 .occupation {
-    
+    font-size: 1rem;
+    display: grid;
+    row-gap: 24px;
+    grid-template-rows: 364px 182px 158px 182px 182px;
 }
 
+.occupation__card {
+    font-size: 1.5rem; /* 24 / 16 */
+    padding: 1em;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.occupation__card__text {
+    margin: 0;
+    color: #FFF;
+}
+
+.occupation__card--graphic-design {
+    background: #755CDE url(./assets/pattern-graphic-design.svg) no-repeat top 1em right 1em;
+}
+
+.occupation__card--double {
+    gap: 25px;
+    padding: 0;
+}
+
+.occupation__card--double__ui-ux,
+.occupation__card--double__apps {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 8px;
+    padding: 24px;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.occupation__card--double__ui-ux {
+    background: #F6A560 url(./assets/pattern-ui-ux.svg) no-repeat top 1em right 1em; 
+}
+
+.occupation__card--double__apps {
+    background: #F39E9E url(./assets/pattern-apps.svg) no-repeat top 1em right 1em;
+}
+
+.occupation__card--illustrations {
+    background: #EB7565 url(./assets/pattern-illustrations.svg) no-repeat top 1em right 1em;
+}
+
+.occupation__card--photography {
+    background: #61C4B7 url(./assets/pattern-photography.svg) no-repeat top 1em right 1em;
+}
+
+.occupation__card--motion-graphics {
+    background: #552049 url(./assets/pattern-motion-graphics.svg) no-repeat top 1em right 1em;
+}
 
 
 /*
