@@ -119,6 +119,29 @@ body {
 
 /*
 
+
+------------ styling hero section -------------
+
+
+*/
+
+.hero {
+    padding: 1em 1em 0; 
+    text-align: center;
+}
+
+.hero__content {
+    margin-top: 2em; /* 32 / 16 */
+}
+
+.hero__content > p {
+    padding-inline: 1.8125em; /* 29 / 16 */
+    margin-block: 1em 2em;
+}
+
+
+/*
+
 ---------- utility classes -----------
 
 */
@@ -127,6 +150,7 @@ body {
     color: #030303;
     margin: 0;
     font-weight: 700;
+    line-height: normal;
 }
 
 .heading--large { font-size: 2.25rem; } /* 36 / 16 */
