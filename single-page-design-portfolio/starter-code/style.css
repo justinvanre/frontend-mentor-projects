@@ -186,6 +186,18 @@ body {
     background: #552049 url(./assets/pattern-motion-graphics.svg) no-repeat top 1em right 1em;
 }
 
+@media screen and (min-width: 48em) { /* 768 / 16 */ 
+    .occupation {
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: 11.375em 9.875em 11.375em; /* 182 / 16  |   158 / 16 */
+        gap: 1.5em; /* 24 / 16 */
+    }
+
+    .occupation__card--graphic-design {
+        grid-row: 1 / 3;
+    }
+}
+
 
 /*
 
@@ -213,6 +225,26 @@ body {
 .hero > .occupation {
     max-width: 32.25em; /* 500 / 16 */
     margin-inline: auto;
+}
+
+@media screen and (min-width: 48em) { /* 768 / 16 */ 
+    .hero {
+        padding: 2.166666667em 2.166666667em 0; /* 39 / 18 */
+    }
+
+    .hero__content {
+        margin-top: 3.555555556em; /* 64 / 18 */
+        max-width: 41.722222222em; /* 751 / 18 */
+    }
+
+    .hero__content > p {
+        padding-inline: 3.25em; /* 58.5 / 18 */
+        margin-block: 1.5em 3.555555556em; /* 27 / 18  |  64 / 18 */
+    }
+
+    .hero > .occupation {
+        max-width: 60.3125em; /* 965 / 16 */
+    }
 }
 
 /*
