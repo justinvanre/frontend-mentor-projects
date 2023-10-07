@@ -314,7 +314,8 @@ body {
     .about {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        max-width: 47em; /* 846 / 18 */
+        max-width: 61.666666667em; /* 1110 / 18 */
+        min-height: 364px;
         padding: 0 2.166666667em; /* 40 / 18 */
         text-align: left;
     }
@@ -337,6 +338,10 @@ body {
         margin-top: 0;
         align-self: center;
     }
+}
+
+@media screen and (min-width: 90em) { /* 1440 / 16 */ 
+
 }
 
 
