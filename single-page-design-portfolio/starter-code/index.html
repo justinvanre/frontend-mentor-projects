@@ -7,6 +7,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="./normalize.css">
   <link rel="stylesheet" href="./style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
   
   <title>Frontend Mentor | Single-page design portfolio</title>
 </head>
@@ -89,44 +92,42 @@
     </section>
 
     <section class="portfolio section-space">
-      <div class="wrapper">
-        <h2 class="heading heading--small">My Work</h2>
-        
-        <div class="portfolio__showcase">
-          <div class="portfolio__showcase__slideshow">
-            <figure>
-              <img src="./assets/image-slide-1.jpg" alt="">
-            </figure>
-  
-            <figure>
-              <img src="./assets/image-slide-2.jpg" alt="">
-            </figure>
-  
-            <figure>
-              <img src="./assets/image-slide-3.jpg" alt="">
-            </figure>
-  
-            <figure>
-              <img src="./assets/image-slide-4.jpg" alt="">
-            </figure>
-  
-            <figure>
-              <img src="./assets/image-slide-5.jpg" alt="">
-            </figure>
-          </div>
-          <div class="portfolio__showcase__btns">
-            <button class="button button--primary button--primary--arrow">
-              <img src="./assets/icon-arrow-left.svg" alt="arrow left icon">
-            </button>
-            <button class="button button--primary button--primary--arrow">
-              <img src="./assets/icon-arrow-right.svg" alt="arrow right icon">
-            </button>
-          </div>
+      <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide" style="width: 270px">
+              <figure>
+                <img src="./assets/image-slide-1.jpg" alt="">
+              </figure>
+            </li>
+            <li class="splide__slide" style="width: 270px">
+              <figure>
+                <img src="./assets/image-slide-2.jpg" alt="">
+              </figure>
+            </li>
+            <li class="splide__slide" style="width: 270px">
+              <figure>
+                <img src="./assets/image-slide-3.jpg" alt="">
+              </figure>
+            </li>
+            <li class="splide__slide" style="width: 270px">
+              <figure>
+                <img src="./assets/image-slide-4.jpg" alt="">
+              </figure>
+            </li>
+            <li class="splide__slide" style="width: 270px">
+              <figure>
+                <img src="./assets/image-slide-5.jpg" alt="">
+              </figure>
+            </li>
+          </ul>
         </div>
-
       </div>
     </section>
+
   </main>
   
+
+<script src="./app.js"></script>
 </body>
 </html>
