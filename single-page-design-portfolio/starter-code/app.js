@@ -1,15 +1,16 @@
-// import Splide from '@splidejs/splide';
+var swiper = new Swiper(".swiper", {
 
-new Splide( '.splide' ).mount();
+    loop: true, 
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: 15,
 
-document.addEventListener( 'DOMContentLoaded', function() {
+    pagination: {
+      clickable: true,
+    },
 
-    var splide = new Splide( '.splide', {
-        type     : 'loop',
-        height   : '10rem',
-        focus    : 'center',
-        autoWidth: true,
-    } );
-
-    splide.mount();
-} );
+    navigation: {
+        nextEl: "#swiper-right",
+        prevEl: "#swiper-left",
+    }
+  });

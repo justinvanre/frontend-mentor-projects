@@ -209,6 +209,46 @@ body {
     }
 }
 
+/*
+
+------------ swiper component -------------
+
+*/
+
+
+.swiper {
+    width: 100%;
+    height: 180px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 320px !important;
+}
+
+.swiper-slide > figure {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide > figure > img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper--portfolio {
+    
+}
+
 
 /*
 
@@ -370,27 +410,6 @@ body {
     overflow: hidden;
 }
 
-.wrapper {
-    width: 100%;
-}
-
-.splide__list {
-    gap: 15px;
-}
-
-.splide__slide > figure {
-    margin: 0;
-    width: 270px;
-    height: 180px;
-    border-radius: .8em;
-    overflow: hidden;
-}
-
-.splide__slide > figure > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 /*
 
