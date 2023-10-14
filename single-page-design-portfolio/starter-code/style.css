@@ -74,7 +74,7 @@ body {
 @media screen and (min-width: 48em) { /* 768 / 16 */ 
     .button {
         font-size: 1rem;
-        padding: 1.17584375em 2.89709375em; /* 18,8135 / 16  |  46,3535 / 16 */
+        padding: 1.175125em 2.82971875em; /* 18,802 / 16  |  45,2755 / 16 */
     }
 
     .button--primary--arrow {
@@ -543,7 +543,7 @@ footer {
 }
 
 @media screen and (min-width: 90em) { /* 1440 / 16 */
-    .heading--large { font-size: 3.25rem; } /* 52 / 16 */
+    .heading--large { font-size: 3.5rem; } /* 56 / 16 */
     .heading--medium { font-size: 2.5rem; } /* 40 / 16 */
 }
 
