@@ -246,9 +246,12 @@ body {
 }
 
 .swiper--portfolio {
-    
+    margin-block: 2em;
 }
 
+.swiper--portfolio figure {
+    border-radius: 0.6em;
+}
 
 /*
 
@@ -408,6 +411,13 @@ body {
 .portfolio {
     text-align: center;
     overflow: hidden;
+}
+
+.portfolio__slideshow-btns {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
 }
 
 
