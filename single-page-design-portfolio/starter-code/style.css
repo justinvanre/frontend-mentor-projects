@@ -33,6 +33,7 @@ body {
 .button {
     border: 0;
     font-size: 0.875rem; /* 14 / 16 */
+    font-weight: 700;
     padding: 0.996642857em 2.05775em; /* 13,953 / 14 | 28,8085 / 14 */
     border-radius: 2em; /* 28 / 14 */
     color: #FFF7F0;
@@ -422,6 +423,33 @@ body {
     display: flex;
     justify-content: center;
     gap: 1em;
+}
+
+
+/*
+
+------------ cta section styling -------------
+
+*/
+
+.cta {
+    text-align: center;
+    padding-inline: 0.9375em; /* 15 / 16 */
+}
+
+.cta__content {
+    background-color: #030303;
+    padding: 3em 1.5em; /* 48 / 16   |   24 / 16 */
+    border-radius: 0.625em; /* 10 / 16 */
+}
+
+.cta__content > h2 {
+    color: #FFF7F0;
+}
+
+.cta__content > p {
+    margin-block: 1.5em;
+    color: #FFF7F0;
 }
 
 
