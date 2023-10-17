@@ -43,9 +43,9 @@ body {
     font-weight: 700;
     color: #FF505C;
     background-color: white;
-    border: 0;
+    border: 1px solid white;
     border-radius: 1.75em; /* 28 / 16 */
-    padding: 0.921875em 1.04003125em; /* 14.75 / 16 |  16,6405 / 16*/
+    padding: 0.859375em 0.97803125em; /* 13,75 / 16 |  15,6485 / 16*/
     margin-top: 10px;
     cursor: pointer;
 
@@ -55,4 +55,14 @@ body {
 .button:hover {
     background-color: #FF7B86;
     color: white;
+}
+
+.button--backgroundless {
+    background-color: transparent;
+    color: white;
+}
+
+.button--backgroundless:hover {
+    background-color: white;
+    color: #FF7B86;
 }
