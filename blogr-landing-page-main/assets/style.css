@@ -1,0 +1,28 @@
+/*
+
+Importing fonts
+
+Overpass: 300, 600
+
+    font-family: 'Overpass', sans-serif;
+
+Ubuntu: 400, 500, 700
+
+    font-family: 'Ubuntu', sans-serif;
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+:root {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+}
