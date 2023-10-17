@@ -72,3 +72,13 @@ body {
     border: 0;
     color: white;
 }
+
+.button--text {
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.125rem; /* 18 / 16 */
+    font-weight: 600;
+    padding: 0;
+    background-color: transparent !important;
+    color: #1F3E5A !important;
+    border: none;
+}
