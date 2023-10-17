@@ -66,3 +66,9 @@ body {
     background-color: white;
     color: #FF7B86;
 }
+
+.button--cta-mobile {
+    background: linear-gradient(135deg, #FF8F71 0%, #FF3E55 100%);
+    border: 0;
+    color: white;
+}
