@@ -82,3 +82,131 @@ body {
     color: #1F3E5A !important;
     border: none;
 }
+
+
+
+/* 
+
+----------- styling menu component ------------
+
+*/
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+
+    padding: 3.5em 1.5em 2.25em; /* 56 / 16 |  24 / 16 |  36 / 16 */
+}
+
+.menu__logo {
+    width: 5.125em; /* 82 / 16 */
+    height: 2em; /* 32 / 16 */
+
+    margin: 0;
+}
+
+.menu__logo > img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.menu__nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    min-height: calc(100vh - 7.75em); /* 124 / 16 */ 
+    overflow: auto;
+}
+
+.menu__nav__wrapper {
+    width: 86.4%; /* 324 / 375 */
+    margin-inline: auto;
+
+    background-color: white;
+
+    padding: 1.5em; /* 24 / 16 */
+    border-radius: 0.3125em; /* 5 / 16 */
+}
+
+.menu__nav__wrapper > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+
+    font-size: 1.125em; /* 18 / 16 */
+    text-align: center;
+
+    border-bottom: 1px solid #E8E4E4;
+    padding-bottom: 1.333333333em; /* 24 / 18 */
+}
+
+.menu__nav__wrapper > ul > li + li {
+    margin-top: 1.333333333em; /* 24 / 18 */
+}
+
+.menu__nav__wrapper > ul > li {
+    width: 100%;
+    display: flex;
+
+    flex-direction: column;
+}
+
+.menu__nav__wrapper > ul > li > a {
+    flex-grow: 1;
+    text-decoration: none;
+    color: #1F3E5A;
+}
+
+.menu__nav__wrapper > ul > li > a:hover {
+    opacity: .75;
+}
+
+.menu__nav__subnav {
+    /* display: none; */
+}
+
+.menu__nav__subnav {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 1.5em; /* 24 / 16 */
+    padding: 0;
+    list-style: none;
+
+    padding-block: 1.0625em 1.5625em; /* 17 / 16 | 25 / 16 */
+
+    background-color: #E8E4E4;
+    border-radius: 0.3125em; /* 5 / 16 */
+}
+
+.menu__nav__subnav > li + li {
+    margin-top: 0.75em; /* 12 / 16 */
+}
+
+.menu__nav__subnav > li > a {
+    flex-grow: 1;
+    text-decoration: none;
+    color: #1F3E5A;
+    opacity: .75;
+}
+
+.nav__cta {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    align-items: center
+}
+
+.nav__cta > .button--text {
+    margin-block: 1.5em; /* 24 / 16 */
+}
