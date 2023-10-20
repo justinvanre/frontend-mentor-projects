@@ -45,8 +45,8 @@ body {
     background-color: white;
     border: 1px solid white;
     border-radius: 1.75em; /* 28 / 16 */
-    padding: 0.859375em 0.97803125em; /* 13,75 / 16 |  15,6485 / 16*/
-    margin-top: 10px;
+    width: 137px;
+    height: 48px;
     cursor: pointer;
 
     transition: all 265ms ease-in-out;
@@ -77,7 +77,8 @@ body {
     font-family: 'Overpass', sans-serif;
     font-size: 1.125rem; /* 18 / 16 */
     font-weight: 600;
-    padding: 0;
+    width: fit-content;
+    height: fit-content;
     background-color: transparent !important;
     color: #1F3E5A !important;
     border: none;
@@ -123,6 +124,8 @@ body {
 
     min-height: calc(100vh - 7.75em); /* 124 / 16 */ 
     overflow: auto;
+
+    transform: scale(0, 1);
 }
 
 .menu__nav__wrapper {
@@ -148,35 +151,32 @@ body {
     padding-bottom: 1.333333333em; /* 24 / 18 */
 }
 
+.menu__nav__wrapper > ul > li {
+    width: 100%;
+    position: relative;
+}
+
 .menu__nav__wrapper > ul > li + li {
     margin-top: 1.333333333em; /* 24 / 18 */
 }
 
-.menu__nav__wrapper > ul > li {
-    width: 100%;
-    display: flex;
+.menu__nav__wrapper > ul > li:hover {
+    opacity: .75;
+}
 
-    flex-direction: column;
+.menu__nav__wrapper > ul > li:hover > .menu__nav__subnav {
+    display: block;
 }
 
 .menu__nav__wrapper > ul > li > a {
-    flex-grow: 1;
     text-decoration: none;
     color: #1F3E5A;
 }
 
-.menu__nav__wrapper > ul > li > a:hover {
-    opacity: .75;
-}
-
-.menu__nav__subnav {
-    /* display: none; */
-}
 
 .menu__nav__subnav {
     font-size: 1rem;
-    display: flex;
-    flex-direction: column;
+    display: none;
 
     margin-top: 1.5em; /* 24 / 16 */
     padding: 0;
@@ -202,11 +202,10 @@ body {
 .nav__cta {
     display: flex;
     flex-direction: column;
-
     text-align: center;
     align-items: center
 }
 
 .nav__cta > .button--text {
-    margin-block: 1.5em; /* 24 / 16 */
+    margin-block: 1.333333333em; /* 24 / 18 */
 }
