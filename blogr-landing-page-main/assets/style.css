@@ -30,6 +30,17 @@ body {
     background-color: black;
 }
 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 /* 
 
@@ -99,6 +110,8 @@ body {
     align-items: center;
 
     position: relative;
+
+    padding-top: 3.5em; /* 56 ÷ 16 */ 
 }
 
 .menu__logo {
@@ -122,4 +135,67 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+/* 
+
+----------- styling nav component ------------
+
+*/
+
+.nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    min-height: calc(100vh - 4.875em); /* 78 ÷ 16 */
+
+    padding: 2.3125em 1.5em 0; /* 37 ÷ 16 | 24 ÷ 16 */
+}
+
+.nav > .wrapper {
+    background-color: white;
+    border-radius: 0.3125em; /* 5 ÷ 16 */
+    padding: 1.5em 1.5em 2em; /* 32 ÷ 16 */
+}
+
+.nav > .wrapper > ul {
+    text-align: center;
+    padding-bottom: 1.5em; /* 18 ÷ 16 */
+    border-bottom: solid 1px  #E8E4E4;
+}
+
+.nav > .wrapper > ul > li + li {
+    margin-top: 1.5em; /* 24 ÷ 16 */
+}
+
+.nav > .wrapper > ul > li > button {
+    font-size: 1.125em; /* 18 ÷ 16 */
+    font-weight: 600;
+    line-height: 155.556%;
+    color: #1F3E5A;
+
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+}
+
+.nav > .wrapper > ul > li > button > span {
+    margin-left: 0.444444444em; /* 8 ÷ 18 */
+}
+
+.nav__sub {
+    display: none;
+}
+
+.nav__cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 1.5em; /* 24 ÷ 16 */
+    gap: 1.5em;
 }
