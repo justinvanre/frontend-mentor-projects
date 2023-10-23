@@ -110,6 +110,7 @@ a {
     align-items: center;
 
     position: relative;
+    z-index: 10;
 
     padding-top: 3.5em; /* 56 ÷ 16 */ 
 }
@@ -146,6 +147,7 @@ a {
 
 .nav {
     position: absolute;
+    z-index: 0;
     top: 100%;
     left: 0;
     right: 0;
@@ -158,6 +160,10 @@ a {
     background-color: white;
     border-radius: 0.3125em; /* 5 ÷ 16 */
     padding: 1.5em 1.5em 2em; /* 32 ÷ 16 */
+
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 130ms ease-in;
 }
 
 .nav > .wrapper > ul {
@@ -171,18 +177,16 @@ a {
     align-items: center;
 
     width: 100%;
-
     gap: 1.333333333em; /* 24 ÷ 18 */
+
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 130ms ease-in;
 }
 
 .nav > .wrapper > ul > li {
     width: 100%;
 }
-
-.nav > .wrapper > ul > li:hover > .nav__sub {
-    display: flex;
-}
-
 
 .nav > .wrapper > ul > li > button {
     font-size: 1.125em; /* 18 ÷ 16 */
@@ -194,6 +198,7 @@ a {
 
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .nav > .wrapper > ul > li > button > span {
@@ -229,4 +234,27 @@ a {
     padding-top: 1.5em; /* 24 ÷ 16 */
     gap: 1.5em;
 
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 130ms ease-in;
+}
+
+
+/*
+
+----- clicked and hover states -------
+
+*/
+
+.nav > .wrapper.clicked {
+    transform: scaleY(1);
+}
+
+.nav > .wrapper.clicked > ul, 
+.nav > .wrapper.clicked > .nav__cta {
+    transform: scaleY(1);
+}
+
+.nav > .wrapper > ul > li:hover > .nav__sub {
+    display: flex;
 }
