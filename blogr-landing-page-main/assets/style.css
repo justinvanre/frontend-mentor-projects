@@ -163,7 +163,7 @@ a {
 
     transform: scaleY(0);
     transform-origin: top;
-    transition: transform 130ms ease-in;
+    transition: transform 130ms ease-in 50ms;
 }
 
 .nav > .wrapper > ul {
@@ -179,9 +179,8 @@ a {
     width: 100%;
     gap: 1.333333333em; /* 24 ÷ 18 */
 
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: transform 130ms ease-in;
+    opacity: 0;
+    transition: opacity 130ms ease-in-out;
 }
 
 .nav > .wrapper > ul > li {
@@ -234,9 +233,8 @@ a {
     padding-top: 1.5em; /* 24 ÷ 16 */
     gap: 1.5em;
 
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: transform 130ms ease-in;
+    opacity: 0;
+    transition: opacity 130ms ease-in-out;
 }
 
 
@@ -252,7 +250,7 @@ a {
 
 .nav > .wrapper.clicked > ul, 
 .nav > .wrapper.clicked > .nav__cta {
-    transform: scaleY(1);
+    opacity: 1;
 }
 
 .nav > .wrapper > ul > li:hover > .nav__sub {
