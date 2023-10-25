@@ -56,8 +56,8 @@ a {
     background-color: white;
     border: 1px solid white;
     border-radius: 1.75em; /* 28 / 16 */
-    width: 137px;
-    height: 48px;
+    width: 8.5625em; /* 137 ÷ 16 */
+    height: 3em; /* 48 ÷ 16 */
     cursor: pointer;
 
     transition: all 265ms ease-in-out;
@@ -90,9 +90,32 @@ a {
     font-weight: 600;
     width: fit-content;
     height: fit-content;
-    background-color: transparent !important;
-    color: #1F3E5A !important;
+    background-color: transparent;
+    color: #1F3E5A;
     border: none;
+}
+
+.button--text:hover {
+    color: #1F3E5A;
+    background-color: transparent;
+}
+
+@media screen and (min-width: 48em) { /* 768 ÷ 16 */
+    .button--text {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        color: white;
+    }
+
+    .button--text:hover {
+        color: white;
+    }
+
+    .button--mobile {
+        background: white; 
+        color: #FF505C;
+    }
 }
 
 
@@ -108,10 +131,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     position: relative;
-    z-index: 10;
-
     padding-top: 3.5em; /* 56 ÷ 16 */ 
 }
 
@@ -119,6 +139,8 @@ a {
     margin: 0;
     width: 5.1036875em; /* 81,659 ÷ 16 */ 
     height: 2em; /* 32 ÷ 16 */
+
+    flex-shrink: 0;
 }
 
 .menu__logo > img {
@@ -136,6 +158,21 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media screen and (min-width: 48em) { /* 768 ÷ 16 */
+    .menu {
+        gap: 4em; /* 64 ÷ 16 */
+    }
+
+    .menu__logo {
+        width: 6.3125em; /* 101 ÷ 16 */
+        height: 2.5em; /* 40 ÷ 16 */
+    }
+    
+    .menu__icon {
+        display: none;
+    }
 }
 
 
@@ -176,7 +213,6 @@ a {
     justify-content: center;
     align-items: center;
 
-    width: 100%;
     gap: 1.333333333em; /* 24 ÷ 18 */
 
     opacity: 0;
@@ -253,6 +289,151 @@ a {
     opacity: 1;
 }
 
-.nav > .wrapper > ul > li:hover > .nav__sub {
+.nav > .wrapper > ul > li:hover > .wrapper--subnav > .nav__sub {
     display: flex;
+}
+
+
+@media screen and (min-width: 48em) { /* 768 ÷ 16 */
+    .nav {
+        position: unset;
+        min-height: unset;
+        padding: 0;
+
+        width: 100%;
+    }
+
+    .nav > .wrapper {
+        transform: scale(1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+
+        background-color: transparent;
+    }
+
+    .nav > .wrapper > ul {
+        opacity: 1;
+        flex-direction: row;
+        padding: 0;
+        border: none;
+
+        gap: 2em; /* 32 ÷ 16 */
+    }
+
+    .nav > .wrapper > ul > li {
+        width: fit-content;
+        position: relative;
+        
+    }
+
+    .nav > .wrapper > ul > li > button {
+        font-size: 1rem;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+        color: white;
+
+        line-height: normal;
+
+        position: relative;
+    }
+
+    .nav > .wrapper > ul > li > button::before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        width: 0;
+        height: 2px;
+        background-color: white;
+
+        transition: width 265ms ease-in-out;
+        transform-origin: left;
+    }   
+
+    .nav > .wrapper > ul > li > button > span {
+        display: inline-block;
+
+        margin-left: 0.5em; /* 8 ÷ 16 */
+        width: 0.625em; /* 10 ÷ 16 */
+        height: 0.4375em; /* 7 / 16 */
+
+        background-image: url(./images/icon-arrow-light.svg);
+        background-size: cover;
+
+        transform: scaleY(1);
+        transition: transform 265ms ease-in-out;
+    }
+
+    .wrapper--subnav {
+        position: absolute;
+        overflow: auto;
+        top: 100%;
+
+        margin-left: 1.5em; /* 24 ÷ 16 */
+
+        transform: scaleY(0);
+
+        transition: transform 165ms ease-in;
+        transform-origin: top;
+    }
+
+    .nav__sub {
+        font-size: 0.9375em;
+        margin-top: 1.333333333em; /* 20 ÷ 15 */
+        min-width: 11.2em; /* 168 ÷ 15 */
+        align-items: flex-start;
+
+        padding: 1.6em; /* 24 ÷ 15 */
+
+        background-color: white;
+        color: #2D2E40;
+
+        opacity: 1;
+
+        font-weight: 400;
+        font-family: 'Ubuntu', sans-serif;
+
+        display: flex;
+    }
+
+    .nav__sub > li {
+        opacity: 0;
+        transition: opacity 165ms ease-in-out 50ms;
+    }
+
+    .nav__cta {
+        opacity: 1;
+        flex-direction: row;
+        padding: 0;
+    }
+
+
+    /*
+    
+    ------ styling interaction states -------
+
+    */
+
+    .nav > .wrapper > ul > li:hover > button::before {
+        width: 81%;
+    }
+
+    .nav > .wrapper > ul > li:hover > button > span {
+        transform: scaleY(-1);
+    }
+
+    .nav > .wrapper > ul > li:hover > .wrapper--subnav {
+        transform: scaleY(1);
+    }
+
+    .nav > .wrapper > ul > li:hover > .wrapper--subnav > .nav__sub > li {
+        opacity: 1;
+    }
+
+
+    .nav__sub > li:hover > a {
+        font-weight: 700;
+    }
+    
 }
