@@ -54,7 +54,7 @@ a {
     color: #FF505C;
     background-color: white;
     border: 1px solid transparent;
-    border-radius: 1.75em; /* 28 / 16 */
+    border-radius: 1.75em; /* 28 ÷ 16 */
     width: 8.5625em; /* 137 ÷ 16 */
     height: 3em; /* 48 ÷ 16 */
     cursor: pointer;
@@ -150,7 +150,7 @@ a {
 
 .menu__icon {
     width: 2em;
-    height: 1.125em; /* 18 / 16 */
+    height: 1.125em; /* 18 ÷ 16 */
 }
 
 .menu__icon > img {
@@ -452,8 +452,8 @@ a {
 
 .header {
     position: relative;
-    padding:56px 24px 156px;
-    border-radius: 0 0 0 100px;
+    padding: 3.5em 1.5em 9.75em; /* 56 ÷ 16 | 24 ÷ 16 | 156 ÷ 16 */
+    border-radius: 0 0 0 6.25em; /* 100 ÷ 16 */
 
     background-image: linear-gradient(135deg, #FF8F71 0%, #FF3E55 100%);
     overflow: hidden;
@@ -462,11 +462,12 @@ a {
 .header::before {
     content: '';
     position: absolute;
-    width: 710.166px;
-    height: 715.154px;
+    width: 44.385375em; /* 710,166 ÷ 16 */
+    height: 44.697125em; /* 715,154 ÷ 16 */
     background-image: url(./images/bg-pattern-intro-mobile.svg);
+    background-repeat: no-repeat;
 
-    background-position: -334px -243px;
+    background-position: -20.875em -15.1875em; /* 334 ÷ 16 | 243 ÷ 16 */
 
     left: 0;
     top: 0;
@@ -478,23 +479,23 @@ a {
 }
 
 .hero {
-    margin-top: 108px;
+    margin-top: 6.75em; /* 108 ÷ 16 */
 }
 
 .hero__content {
     text-align: center;
     color: white;
-    padding-inline: 10px;
+    padding-inline: 0.625em; /* 10 ÷ 16 */
 }
 
 .hero__content > h1 {
-    font-size: 36px; 
+    font-size: 2.25rem; /* 36 ÷ 16  */
     letter-spacing: -1.08px;
     margin: 0;
 }
 
 .hero__content > p {
-    font-size: 18px;
+    font-size: 1.125rem; /* 18 ÷ 16 */
     margin: 0;
 }
 
@@ -502,8 +503,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    gap: 16px;
-
-    margin-top: 48px;
+    gap: 1em;
+    margin-top: 3em; /* 48 ÷ 16 */
 }
