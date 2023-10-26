@@ -27,7 +27,6 @@ body {
     margin: 0;
     font-family: 'Overpass', sans-serif;
     font-size: 1rem;
-    background-color: black;
 }
 
 ul {
@@ -54,7 +53,7 @@ a {
     font-weight: 700;
     color: #FF505C;
     background-color: white;
-    border: 1px solid white;
+    border: 1px solid transparent;
     border-radius: 1.75em; /* 28 / 16 */
     width: 8.5625em; /* 137 ÷ 16 */
     height: 3em; /* 48 ÷ 16 */
@@ -71,6 +70,7 @@ a {
 .button--backgroundless {
     background-color: transparent;
     color: white;
+    border: 1px solid white;
 }
 
 .button--backgroundless:hover {
@@ -132,8 +132,7 @@ a {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding-top: 3.5em; /* 56 ÷ 16 */ 
-}
+} 
 
 .menu__logo {
     margin: 0;
@@ -183,6 +182,7 @@ a {
 */
 
 .nav {
+    display: none;
     position: absolute;
     z-index: 0;
     top: 100%;
@@ -280,7 +280,11 @@ a {
 
 */
 
-.nav > .wrapper.clicked {
+.nav.clicked {
+    display: block;
+}
+
+.nav.clicked > .wrapper {
     transform: scaleY(1);
 }
 
@@ -436,4 +440,70 @@ a {
         font-weight: 700;
     }
     
+}
+
+
+/* 
+
+---------- hero section styling -----------
+
+*/
+
+
+.header {
+    position: relative;
+    padding:56px 24px 156px;
+    border-radius: 0 0 0 100px;
+
+    background-image: linear-gradient(135deg, #FF8F71 0%, #FF3E55 100%);
+    overflow: hidden;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    width: 710.166px;
+    height: 715.154px;
+    background-image: url(./images/bg-pattern-intro-mobile.svg);
+
+    background-position: -334px -243px;
+
+    left: 0;
+    top: 0;
+}
+
+.header > .wrapper {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    margin-top: 108px;
+}
+
+.hero__content {
+    text-align: center;
+    color: white;
+    padding-inline: 10px;
+}
+
+.hero__content > h1 {
+    font-size: 36px; 
+    letter-spacing: -1.08px;
+    margin: 0;
+}
+
+.hero__content > p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.hero__cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 16px;
+
+    margin-top: 48px;
 }
