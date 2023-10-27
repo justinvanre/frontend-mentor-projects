@@ -512,7 +512,7 @@ a {
 @media screen and (min-width: 44.4375em) { /* 711 ÷ 16 */
     .header::before {
         background-image: url(./images/bg-pattern-intro-desktop.svg);
-        background-position: -438px -1341px;
+        background-position: -27.375em -83.8125em; /* 438 ÷ 16 | 1341 ÷ 16 */
         width: 106.5625em; /* 1705 ÷ 16 */
         height: 107.25em; /* 1716 ÷ 16 */
     }
@@ -534,15 +534,89 @@ a {
     }
     
     .hero__content > h1 {
-        font-size: 64px;
+        font-size: 4rem; /* 64 ÷ 16 */
         letter-spacing: -1.92px;
     }
 
     .hero__content > p {
-        font-size: 20px;
+        font-size: 1.25rem; /* 20 ÷ 16 */
     }
 
     .hero__cta {
-        margin-top: 43px;
+        margin-top: 2.6875em; /* 43 ÷ 16 */
     }
+}
+
+
+
+/* 
+
+---------- intro section styling -----------
+
+*/
+
+
+.intro {
+    margin-top: 6.25em; /* 100 ÷ 16 */
+    padding-inline: 1.5em; /* 24 ÷ 16 */
+
+    text-align: center;
+}
+
+.intro__heading > h2 {
+    font-size: 1.75rem; /* 28 ÷ 16 */
+    letter-spacing: -0.84px; 
+    color: #1F3E5A;
+}
+
+.intro__media {
+    margin-top: 2.375em; /* 38 ÷ 16 */
+}
+
+.intro__media > div {
+    max-width: 20.375em; /* 326 ÷ 16 */
+    min-height: 20.375em; 
+    background-image: url(./images/illustration-editor-mobile.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin-inline: auto;
+}
+
+.intro__content {
+    margin-top: 2.875em; /* 46 ÷ 16 */
+}
+
+.intro__content__p {
+    padding-inline: 0.5625em; /* 9 ÷ 16 */
+}
+
+.intro__content__p > h3 {
+    font-size: 1.75rem; /* 28 ÷ 16 */
+    line-height: 114.286%;
+    color: #1F3E5A;
+
+    margin-block: 0;
+}
+
+.intro__content__p > p {
+    margin-block: 1em 0;
+
+    line-height: 175%;
+    letter-spacing: 0.5px;
+    color: #4C5862;
+}
+
+
+
+
+/* 
+
+---------- utility classes -----------
+
+*/
+
+.spacing--paragraph {
+    margin-top: 2.5em; /* 40 ÷ 16 */
 }
