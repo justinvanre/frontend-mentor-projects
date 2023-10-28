@@ -731,6 +731,42 @@ a {
 }
 
 
+/* ------------ service section styling -------------- */
+.infra__service {
+    margin-top: 4.9375em; /* 79 ÷ 16 */
+}
+
+.infra__service__media {
+    width: 20.375em; /* 326 ÷ 16 */
+    height: 20.375em; /* 326 ÷ 16 */
+    margin-inline: auto;
+    background: url(./images/illustration-laptop-mobile.svg) center/cover no-repeat;
+}
+
+.infra__service__content {
+    margin-top: 2.875em; /* 46 ÷ 16 */
+    padding-inline: 1.5em; /* 24 ÷ 16 */
+}
+
+.infra__service__content__p {
+    text-align: center;
+}
+
+.infra__service__content__p > h3 {
+    font-size: 1.75rem; /* 28 ÷ 16 */
+    color: #1F3E5A;
+    line-height: 114.286%;
+    margin: 0;
+}
+
+.infra__service__content__p > p {
+    color: #4C5862;
+    font-weight: 400;
+    line-height: 175% ;
+    letter-spacing: 0.5px;
+}
+
+
 /* 
 
 ---------- utility classes -----------
