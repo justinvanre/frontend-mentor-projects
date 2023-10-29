@@ -929,6 +929,42 @@ a {
     opacity: 0.75;
 }
 
+@media screen and (min-width: 90em) {
+    .footer {
+        margin-top: 7.6875em; /* 123 ÷ 16 */
+        padding: 4.375em 0; /* 70 ÷ 16 */
+    }
+
+    .footer > .wrapper {
+        width: 77.0833333%; /* 1110 ÷ 1440 */
+        margin-inline: auto;
+
+        display: flex;
+        gap: 11.5em; /* 184 ÷ 16 */
+    }
+
+    .footer__logo {
+        margin: 0;
+    }
+
+    .footer__nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.666666667em; /* 30 ÷ 18 */
+
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .footer__nav > ul {
+        width: 14.166666667em; /* 255 ÷ 18 */
+    }
+
+    .footer__nav > ul + ul {
+        margin-top: 0;
+    }
+}
+
 
 /* 
 
