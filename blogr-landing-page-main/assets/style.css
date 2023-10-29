@@ -572,15 +572,10 @@ a {
 
 .intro__media {
     margin-top: 2.375em; /* 38 ÷ 16 */
-}
 
-.intro__media > div {
-    max-width: 20.375em; /* 326 ÷ 16 */
+    max-width: 20.375em;
     min-height: 20.375em; 
-    background-image: url(./images/illustration-editor-mobile.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url(./images/illustration-editor-mobile.svg) center/cover no-repeat;
 
     margin-inline: auto;
 }
@@ -614,7 +609,7 @@ a {
 
     .intro {
         padding: 0;
-        margin-top: 0;
+        margin-top: 4.4375em; /* 71 ÷ 16 */
         min-height: 55.125em; /* 882 ÷ 16 */
 
         overflow: hidden;
@@ -623,7 +618,7 @@ a {
     .intro > .wrapper {
         width: 77.0833333%; /* 1110 ÷ 1440 */
         margin-inline: auto;
-        margin-top: 9.375em; /* 150 ÷ 16 */
+        margin-top: 4.4375em; /* 71 ÷ 16 */
     }
 
     .intro__grid {
@@ -646,22 +641,29 @@ a {
     .intro__media {
         grid-column: 8 / 13;
         order: 3;
-
         position: relative;
-        margin-top: 0.5625em; /* 9 ÷ 16 */
+        margin-top: 0;
+
+        min-height: 25.73825em; /* 411,812 ÷ 16 */
+        max-width: unset;
+
+        background: unset;
+        margin-inline: unset;
     }
 
-    .intro__media > div {
+    .intro__media::before {
+        content: '';
         position: absolute;
-        max-width: unset;
-        width: 62em; /* 992 ÷ 16 */
-        height: 55.125em; /* 882 ÷ 16 */
-
-        left: -4.6875em; /* 75 ÷ 16 */
-        top: -15.1875em; /* 243 ÷ 16 */
+        width: 57.8125em; /* 925 ÷ 16 */
+        height: 55.125em;  /* 882 ÷ 16 */
 
         background-image: url(./images/illustration-editor-desktop.svg);
-        background-size: 57.8125em 55.125em; /* 925 ÷ 16  |  882 ÷ 16 */
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        transform: translateY(-50%);
+        left: -9%;
+        top: 55.2%;
     }
 
     .intro__content {
@@ -820,6 +822,7 @@ a {
     font-weight: 400;
     line-height: 175% ;
     letter-spacing: 0.5px;
+    margin-bottom: 0;
 }
 
 @media screen and (min-width: 90em) {
@@ -862,8 +865,10 @@ a {
         transform: translateY(-50%);
 
         background-image: url(./images/illustration-laptop-desktop.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
         right: -19%;
-        top: 46%;
+        top: 50%;
     }
 
     .infra__service__content {
