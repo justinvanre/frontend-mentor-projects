@@ -880,6 +880,58 @@ a {
 
 /* 
 
+---------- footer section styling -----------
+
+*/
+
+
+.footer {
+    margin-top: 6.25em; /* 100 ÷ 16 */
+    padding: 4.6875em 1.5em; /* 75 ÷ 16 | 24 ÷ 16 */
+
+    border-radius: 0 6.25em 0 0; /* 100 ÷ 16 */
+    background-color: #24242C;
+}
+
+.footer__logo {
+    margin: 0 auto;
+    width: 6.3125em; /* 101 ÷ 16 */
+    height: 2.5em; /* 40 ÷ 16 */
+}
+
+.footer__logo > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer__nav {
+    font-size: 1.125em; /* 18 ÷ 16 */
+    margin-top: 4em; /* 72 ÷ 18 */
+    text-align: center;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    line-height: 183.333%;
+    color: white;
+}
+
+.footer__nav > ul + ul {
+    margin-top: 2.222222222em; /* 40 ÷ 18 */
+}
+
+.footer__nav__heading {
+    font-weight: 500;
+    margin-bottom: 1.166666667em; /* 21 ÷ 18 */
+}
+
+.footer__nav > ul > li > a {
+    opacity: 0.75;
+}
+
+
+/* 
+
 ---------- utility classes -----------
 
 */
