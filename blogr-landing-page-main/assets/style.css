@@ -734,6 +734,9 @@ a {
 @media screen and (min-width: 90em) {
     .infra__intro {
         padding: 6.9375em 0; /* 111 ÷ 16 */
+
+        background: url(images/bg-pattern-circles.svg) -13.3125em -31.8125em/63.375em 63.625em no-repeat, /* 213 ÷ 16 | 509 ÷ 16 |  1014 ÷ 16 |  1018 ÷ 16 */
+                linear-gradient(135deg, #2D2E40 0%, #3F4164 100%) center top/cover;
     }
 
     .infra__intro > .wrapper {
@@ -768,7 +771,7 @@ a {
 
         transform: translateY(-50%);
         left: -9%;
-        top: 50%;
+        top: 62%;
     }
 
     .infra__intro__content {
