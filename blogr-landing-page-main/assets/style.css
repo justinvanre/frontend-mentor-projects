@@ -731,7 +731,56 @@ a {
 }
 
 
+@media screen and (min-width: 90em) {
+    .infra__intro {
+        padding: 6.9375em 0; /* 111 ÷ 16 */
+    }
+
+    .infra__intro > .wrapper {
+        width: 77.0833333%; /* 1110 ÷ 1440 */
+        margin-inline: auto;
+    }
+
+    .infra__intro__grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 1.875em; /* 30 ÷ 16 */
+    }
+
+    .infra__intro__media {
+        position: relative;
+        grid-column: 1 / 6;
+
+        transform: unset;
+        background: unset;
+        left: 0;
+        width: unset;
+        height: 100%;
+    }
+
+    .infra__intro__media::before {
+        content: '';
+        position: absolute;
+        width: 34.5em; /* 552 ÷ 16 */
+        height: 36.1875em; /* 579 ÷ 16 */
+        background-image: url(./images/illustration-phones.svg);
+        background-size: cover;
+
+        transform: translateY(-50%);
+        left: -9%;
+        top: 50%;
+    }
+
+    .infra__intro__content {
+        grid-column: 7 / 13;
+        text-align: left;
+    }
+}
+
+
 /* ------------ service section styling -------------- */
+
+
 .infra__service {
     margin-top: 4.9375em; /* 79 ÷ 16 */
 }
