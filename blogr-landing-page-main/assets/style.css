@@ -477,6 +477,9 @@ a {
 .header > .wrapper {
     position: relative;
     z-index: 10;
+
+    max-width: 69.375em; /* 1110 ÷ 16 */
+    margin-inline: auto;
 }
 
 .hero {
@@ -510,36 +513,28 @@ a {
 
 
 @media screen and (min-width: 44.4375em) { /* 711 ÷ 16 */
+    .header {
+        padding-block: clamp(3.5em, calc(3.5em + 0.4861111vw), 3.9375em) 9.6875em; /* 63 ÷ 16 | 155 ÷ 16 */
+    }
+
     .header::before {
         background-image: url(./images/bg-pattern-intro-desktop.svg);
         background-position: -27.375em -83.8125em; /* 438 ÷ 16 | 1341 ÷ 16 */
         width: 106.5625em; /* 1705 ÷ 16 */
         height: 107.25em; /* 1716 ÷ 16 */
     }
-}
-
-
-@media screen and (min-width: 90em) { /* 1440 ÷ 16 */
-    .header {
-        padding: 3.9375em 0 9.6875em; /* 63 ÷ 16 | 155 ÷ 16 */
-    }
-
-    .header > .wrapper {
-        width: 77.0833333%; /* 1110 ÷ 1440 */
-        margin-inline: auto;
-    }
 
     .hero {
-        margin-top: 8.25em; /* 132 ÷ 16 */
+        margin-top: clamp(6.75em, calc(6.75em + 1.6666667vw), 8.25em); /* 132 ÷ 16 */
     }
-    
+
     .hero__content > h1 {
-        font-size: 4rem; /* 64 ÷ 16 */
+        font-size: clamp(2.25rem, calc(2.25rem + 1.9444444vw), 4rem); /* 28 ÷ 1440 | 64 ÷ 16 */
         letter-spacing: -1.92px;
     }
 
     .hero__content > p {
-        font-size: 1.25rem; /* 20 ÷ 16 */
+        font-size: clamp(1.125rem, calc(1.125rem + 0.1388889vw), 1.25rem); /* 20 ÷ 16 */
     }
 
     .hero__cta {
