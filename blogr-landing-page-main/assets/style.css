@@ -558,6 +558,11 @@ a {
     text-align: center;
 }
 
+.intro > .wrapper {
+    max-width: 43.0625em; /* 689 ÷ 16 */
+    margin-inline: auto;
+}
+
 .intro__heading > h2 {
     font-size: 1.75rem; /* 28 ÷ 16 */
     letter-spacing: -0.84px; 
@@ -600,18 +605,18 @@ a {
 }
 
 
-@media screen and (min-width: 90em) { /* 1440 ÷ 16 */
+@media screen and (min-width: 54.5em) { /* 872 ÷ 16  */
 
     .intro {
-        padding: 0;
+        padding-inline: clamp(2em, calc(2em + 3.0833333vw), 6em); /* 32 ÷ 16 | 69 ÷ 16 | (69 - 32) ÷ 1200 */
         margin-top: 4.4375em; /* 71 ÷ 16 */
-        min-height: 55.125em; /* 882 ÷ 16 */
+        min-height: clamp(51.5em, calc(51.5em + 4.0277778vw), 55.125em); /* 824 ÷ 16 | 882 ÷ 16 */
 
         overflow: hidden;
     }
 
     .intro > .wrapper {
-        width: 77.0833333%; /* 1110 ÷ 1440 */
+        max-width: 69.375em; /* 1110 ÷ 16 */
         margin-inline: auto;
         margin-top: 4.4375em; /* 71 ÷ 16 */
     }
@@ -630,6 +635,7 @@ a {
 
     .intro__heading > h2 {
         font-size: 2.5rem; /* 40 ÷ 16 */
+        font-size: clamp(1.75rem, calc(1.75rem + 0.8333333vw), 2.5rem); /* 40 ÷ 16  */
         letter-spacing: -1.2px;
     }
 
@@ -649,16 +655,16 @@ a {
     .intro__media::before {
         content: '';
         position: absolute;
-        width: 57.8125em; /* 925 ÷ 16 */
-        height: 55.125em;  /* 882 ÷ 16 */
+        width: clamp(43.75em, calc(43.75em + 15.625vw), 57.8125em); /* 700 ÷ 16 | 925 ÷ 16 */
+        height: clamp(40.1875em, calc(40.1875em + 16.5972222vw), 55.125em);  /* 643 ÷ 16 | 882 ÷ 16 */
 
-        background-image: url(./images/illustration-editor-desktop.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        overflow: visible;
 
+        background: url(./images/illustration-editor-desktop.svg) center/contain no-repeat;
+        
         transform: translateY(-50%);
-        left: -9%;
-        top: 55.2%;
+        left: -10%;
+        top: clamp(12.592975em, calc(12.592975em + 1.7933611vw), 14.207em); /* 201,4876 ÷ 16  | 227.312 ÷ 16 */
     }
 
     .intro__content {
@@ -674,6 +680,7 @@ a {
     }
 
 }
+
 
 /* 
 
@@ -977,8 +984,8 @@ a {
 } 
 
 
-@media screen and (min-width: 90em) {
+@media screen and (min-width: 54.5em) { /* 872 ÷ 16  */
     .spacing--paragraph {
-        margin-top: 4em; /* 64 ÷ 16 */
+        margin-top: clamp(2.5em, calc(2.5em + 1.6666667vw), 4em); /* 64 ÷ 16 */
     } 
 }
