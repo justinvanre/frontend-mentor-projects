@@ -661,7 +661,7 @@ a {
         overflow: visible;
 
         background: url(./images/illustration-editor-desktop.svg) center/contain no-repeat;
-        
+
         transform: translateY(-50%);
         left: -10%;
         top: clamp(12.592975em, calc(12.592975em + 1.7933611vw), 14.207em); /* 201,4876 ÷ 16  | 227.312 ÷ 16 */
@@ -702,6 +702,11 @@ a {
 
 }
 
+.infra__intro > .wrapper {
+    max-width: 43.9375em; /* 703 ÷ 16 */
+    margin-inline: auto;
+}
+
 .infra__intro__media {
     position: absolute;
     width: 20.5em; /* 328 ÷ 16 */
@@ -734,22 +739,29 @@ a {
     margin-block: 0.625em 0; /* 10 ÷ 16 */
 }
 
-
-@media screen and (min-width: 90em) {
+@media screen and (min-width: 54.5em) { /* 872 ÷ 16  */
     .infra {
-        margin-top: 57px;
+        margin-top: 7.5em; /* 120 ÷ 16 */
+    }
+}
+
+
+@media screen and (min-width: 64em) { /* 1024 ÷ 16  */ 
+
+    .infra {
+        margin-top: 3.5625em; /* 57 ÷ 16 */
     }
 
     .infra__intro {
-        padding: 6.9375em 0; /* 111 ÷ 16 */
+        /* padding: 6.9375em 0; /* 111 ÷ 16 */
+        padding: clamp(2.5em, calc(2.5em + 4.9305556vw), 6.9375em) clamp(2em, calc(2em + 3.0833333vw), 6em); /* 40 ÷ 16 |  111 ÷ 16 */
 
         background: url(images/bg-pattern-circles.svg) -13.3125em -31.8125em/63.375em 63.625em no-repeat, /* 213 ÷ 16 | 509 ÷ 16 |  1014 ÷ 16 |  1018 ÷ 16 */
                 linear-gradient(135deg, #2D2E40 0%, #3F4164 100%) center top/cover;
     }
 
     .infra__intro > .wrapper {
-        width: 77.0833333%; /* 1110 ÷ 1440 */
-        margin-inline: auto;
+        max-width: 69.375em; /* 1110 ÷ 16 */
     }
 
     .infra__intro__grid {
@@ -772,19 +784,31 @@ a {
     .infra__intro__media::before {
         content: '';
         position: absolute;
-        width: 34.5em; /* 552 ÷ 16 */
-        height: 36.1875em; /* 579 ÷ 16 */
+        /* width: 34.5em; /* 552 ÷ 16 */
+        /* height: 36.1875em; /* 579 ÷ 16 */
+        width: clamp(26.875em, calc(26.875em + 8.4722222vw), 34.5em); /* 430 ÷ 16 | 552 ÷ 16 */
+        height: clamp(26.875em, calc(26.875em + 10.3472222vw), 36.1875em); /* 430 ÷ 16 |  579 ÷ 16 */
+
         background-image: url(./images/illustration-phones.svg);
         background-size: cover;
+        background-repeat: no-repeat;
 
         transform: translateY(-50%);
-        left: -9%;
-        top: 62%;
+        /* left: -9%;
+        top: 62%; */
+        left: -10%;
+        top: 7.215em; /* 115,44 ÷ 16 */
     }
 
     .infra__intro__content {
         grid-column: 7 / 13;
         text-align: left;
+    }
+}
+
+@media screen and (min-width: 74.3125em) { /* 1189 ÷ 16 */
+    .infra__intro__media::before {
+        top: 6.665em; /* 106,64 ÷ 16 */
     }
 }
 
