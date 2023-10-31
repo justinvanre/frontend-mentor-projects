@@ -387,24 +387,22 @@ body.modal-open {
         font-size: 0.9375em;
         margin-top: 1.333333333em; /* 20 ÷ 15 */
         min-width: 11.2em; /* 168 ÷ 15 */
-        align-items: flex-start;
-
         padding: 1.6em; /* 24 ÷ 15 */
-
         background-color: white;
         color: #2D2E40;
-
         opacity: 1;
-
         font-weight: 400;
         font-family: 'Ubuntu', sans-serif;
-
-        display: flex;
+        text-align: left;
     }
 
     .nav__sub > li {
-        opacity: 0;
-        transition: opacity 165ms ease-in-out 50ms;
+        width: 100%;
+    }
+
+    .nav__sub > li > a {
+        display: inline-block;
+        width: 100%;
     }
 
     .nav__cta {
