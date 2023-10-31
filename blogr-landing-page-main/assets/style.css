@@ -40,6 +40,11 @@ a {
     color: inherit;
 }
 
+body.modal-open {
+    overflow: hidden;
+    position: fixed;
+}
+
 
 /* 
 
@@ -182,26 +187,24 @@ a {
 */
 
 .nav {
-    display: none;
+    display: block;
     position: absolute;
     z-index: 0;
     top: 100%;
     left: 0;
     right: 0;
-    min-height: calc(100vh - 4.875em); /* 78 ÷ 16 */
 
     padding: 2.3125em 1.5em 0; /* 37 ÷ 16 | 24 ÷ 16 */
 
+    /* transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 165ms ease-in-out 50ms; */
 }
 
 .nav > .wrapper {
     background-color: white;
     border-radius: 0.3125em; /* 5 ÷ 16 */
     padding: 1.5em 1.5em 2em; /* 32 ÷ 16 */
-
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: transform 130ms ease-in 50ms;
 }
 
 .nav > .wrapper > ul {
@@ -282,11 +285,7 @@ a {
 */
 
 .nav.clicked {
-    display: block;
-}
-
-.nav.clicked > .wrapper {
-    transform: scaleY(1);
+    /* transform: scaleY(1); */
 }
 
 .nav.clicked > .wrapper > ul, 
