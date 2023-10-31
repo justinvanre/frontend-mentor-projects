@@ -342,6 +342,8 @@ body.modal-open {
         line-height: normal;
 
         position: relative;
+
+        opacity: 0.75;
     }
 
     .nav > .wrapper > ul > li > button::before {
@@ -417,6 +419,10 @@ body.modal-open {
     ------ styling interaction states -------
 
     */
+
+    .nav > .wrapper > ul > li:hover > button {
+        opacity: 1;
+    }
 
     .nav > .wrapper > ul > li:hover > button::before {
         width: 81%;
@@ -523,7 +529,7 @@ body.modal-open {
     }
 
     .hero {
-        margin-top: clamp(6.75em, calc(6.75em + 1.6666667vw), 8.25em); /* 132 ÷ 16 */
+        margin-top: clamp(6.75em, calc(6.75em + 1.0416667vw), 7.6875em); /* 123 ÷ 16 */
     }
 
     .hero__content > h1 {
@@ -659,6 +665,7 @@ body.modal-open {
         overflow: visible;
 
         background: url(./images/illustration-editor-desktop.svg) center/contain no-repeat;
+        background-size: 99%;
 
         transform: translateY(-50%);
         left: -10%;
