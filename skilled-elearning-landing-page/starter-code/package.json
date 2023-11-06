@@ -1,0 +1,19 @@
+{
+  "name": "starter-code",
+  "version": "1.0.0",
+  "description": "In this project we're going to use both sass and bootstrap to build a landing page",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bootstrap",
+    "sass"
+  ],
+  "author": "Justin",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "sass": "^1.69.5"
+  }
+}
