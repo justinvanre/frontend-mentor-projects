@@ -17,7 +17,11 @@
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/root";
 
+
 // 6. Optionally include any other parts as needed
+
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/utilities";
 
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
@@ -25,3 +29,33 @@
 
 // 8. Add additional custom code here
 
+
+
+.color-panel {
+    display: flex;
+    gap: 10px;
+
+    width: 100%;
+    height: 200px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.color-panel > li {
+    flex: 1 0 0;
+}
+
+.color-panel > li > div {
+    width: 100%;
+    height: 100%;
+}
+
+
+.primary-color {
+    background-color: $primary;
+}
+
+.secondary-color {
+    background-image: $secondary;
+}
