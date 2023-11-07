@@ -1,9 +1,44 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
 
 
 // theme variables bootstrap
 $primary: #13183F;
 $secondary: #83869A;
 
+
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/variables-dark";
+
+/*
+
+----------- typography ----------
+
+*/
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.heading-xl {
+    font-size: 3.5rem; /* 56 / 16 */
+    line-height: 1.25; /* 70 / 56 */
+    font-weight: 900;
+}
+
+.heading-l {
+    font-size: 2.5rem; /* 40 / 16 */
+    line-height: 1.275; /* 51 / 40 */
+    font-weight: 900;
+}
+
+.heading-m {
+    font-size: 2rem; /* 32 / 16 */
+    line-height: 1.25; /* 40 / 32 */
+    font-weight: 900;
+}
+
+.heading-s {
+    font-size: 1.5rem; /* 24 / 16 */
+    line-height: 1.166666667; /* 28 / 24 */
+    font-weight: 900;
+}
